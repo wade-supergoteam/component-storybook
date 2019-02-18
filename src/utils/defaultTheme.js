@@ -54,15 +54,14 @@ export const colors = {
   grayDark: gray800,
 };
 
-export const primary: string = '#7624e6';
-export const secondary: string = '#a59595';
-export const success: string = '#19f494';
-export const info: string = '#4d43cd';
-export const warning: string = '#f28a53';
-export const danger: string = '#eb4261';
-export const light: string = '#f8f9fa';
-export const dark: string = '#343a40';
-
+export const primary: string = "#7624e6";
+export const secondary: string = "#a59595";
+export const success: string = "#19f494";
+export const info: string = "#4d43cd";
+export const warning: string = "#f28a53";
+export const danger: string = "#eb4261";
+export const light: string = "#f8f9fa";
+export const dark: string = "#343a40";
 
 // Options
 //

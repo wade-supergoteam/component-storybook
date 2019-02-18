@@ -1,9 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import DropdownHeader from './DropdownHeader';
-import DropdownItem from './DropdownItem';
-import DropdownMenu from './DropdownMenu';
-import DropdownDivider from './DropdownDivider';
+import DropdownHeader from "./DropdownHeader";
+import DropdownItem from "./DropdownItem";
+import DropdownMenu from "./DropdownMenu";
+import DropdownDivider from "./DropdownDivider";
 
 const Dropdown = styled.div`
   position: relative;
@@ -13,7 +13,7 @@ const Dropdown = styled.div`
     css`
       ${DropdownMenu} {
         display: block;
-        ${props.align === 'right' ? 'right: 0;' : 'left: 0;'};
+        ${props.align === "right" ? "right: 0;" : "left: 0;"};
       }
     `};
 `;
@@ -24,7 +24,7 @@ Dropdown.Menu = DropdownMenu;
 Dropdown.Divider = DropdownDivider;
 
 Dropdown.defaultProps = {
-  align: 'left'
+  align: "left",
 };
 
 export default Dropdown;

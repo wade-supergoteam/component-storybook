@@ -1,19 +1,19 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
 
-import Alert from '../index';
+import Alert from "../index";
 
-export default storiesOf('Alert', module)
+export default storiesOf("Alert", module)
   .addDecorator(
     host({
       title:
-        'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
-      align: 'center',
-      width: 700
-    })
+        "Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+      align: "center",
+      width: 700,
+    }),
   )
-  .add('Default Alert', () => (
+  .add("Default Alert", () => (
     <Fragment>
       <Alert type="primary">This is a primary alert—check it out!</Alert>
       <Alert type="secondary">This is a secondary alert—check it out!</Alert>

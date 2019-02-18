@@ -1,17 +1,17 @@
 // @flow
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // $FlowIssue
-import get from 'lodash.get';
+import get from "lodash.get";
 
-import { borderRadius } from '../utils/border-radius';
+import { borderRadius } from "../utils/border-radius";
 
-import { paginationSize } from './pagination-size';
-import listUnstyled from '../utils/lists';
+import { paginationSize } from "./pagination-size";
+import listUnstyled from "../utils/lists";
 
-import PaginationLink from './PaginationLink';
-import PaginationItem from './PaginationItem';
+import PaginationLink from "./PaginationLink";
+import PaginationItem from "./PaginationItem";
 
 import {
   paginationPaddingYsm,
@@ -23,8 +23,8 @@ import {
   borderRadiusLg,
   fontSizeSm,
   lineHeightSm,
-  borderRadiusSm
-} from './default-theme';
+  borderRadiusSm,
+} from "./default-theme";
 
 const Pagination = styled.ul`
   display: flex;
@@ -32,23 +32,23 @@ const Pagination = styled.ul`
   ${borderRadius()};
 
   ${({ size, theme }) =>
-    size === 'large' &&
+    size === "large" &&
     paginationSize(
-      get(theme, 'paginationPaddingYlg', paginationPaddingYlg),
-      get(theme, 'paginationPaddingXlg', paginationPaddingXlg),
-      get(theme, 'fontSizeLg', fontSizeLg),
-      get(theme, 'lineHeightLg', lineHeightLg),
-      get(theme, 'borderRadiusLg', borderRadiusLg)
+      get(theme, "paginationPaddingYlg", paginationPaddingYlg),
+      get(theme, "paginationPaddingXlg", paginationPaddingXlg),
+      get(theme, "fontSizeLg", fontSizeLg),
+      get(theme, "lineHeightLg", lineHeightLg),
+      get(theme, "borderRadiusLg", borderRadiusLg),
     )};
 
   ${({ size, theme }) =>
-    size === 'small' &&
+    size === "small" &&
     paginationSize(
-      get(theme, 'paginationPaddingYsm', paginationPaddingYsm),
-      get(theme, 'paginationPaddingXsm', paginationPaddingXsm),
-      get(theme, 'fontSizeSm', fontSizeSm),
-      get(theme, 'lineHeightSm', lineHeightSm),
-      get(theme, 'borderRadiusSm', borderRadiusSm)
+      get(theme, "paginationPaddingYsm", paginationPaddingYsm),
+      get(theme, "paginationPaddingXsm", paginationPaddingXsm),
+      get(theme, "fontSizeSm", fontSizeSm),
+      get(theme, "lineHeightSm", lineHeightSm),
+      get(theme, "borderRadiusSm", borderRadiusSm),
     )};
 `;
 

@@ -1,21 +1,15 @@
-import * as theme from './defaultTheme';
+import * as theme from "./defaultTheme";
 
-import { colorYiq, themeColorLevel } from './color-functions';
+import { colorYiq, themeColorLevel } from "./color-functions";
 
-import {
-  borderRadius,
-  borderTopRadius,
-  borderRightRadius,
-  borderBottomRadius,
-  borderLeftRadius
-} from './border-radius';
+import { borderRadius, borderTopRadius, borderRightRadius, borderBottomRadius, borderLeftRadius } from "./border-radius";
 
-import { hover, hoverFocus, plainHoverFocus, hoverFocusActive } from './hover';
+import { hover, hoverFocus, plainHoverFocus, hoverFocusActive } from "./hover";
 
-import { sassRgba } from './sassRgba';
-import { boxShadow } from './box-shadow';
-import { transition } from './transition';
-import { gradientStriped } from './gradients';
+import { sassRgba } from "./sassRgba";
+import { boxShadow } from "./box-shadow";
+import { transition } from "./transition";
+import { gradientStriped } from "./gradients";
 
 export default {
   theme,
@@ -33,5 +27,5 @@ export default {
   hover,
   hoverFocus,
   plainHoverFocus,
-  hoverFocusActive
+  hoverFocusActive,
 };

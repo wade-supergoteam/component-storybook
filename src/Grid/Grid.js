@@ -61,12 +61,10 @@ const getGridItemMediaRules = ({ media, theme }) => {
         rules.push(
           mq[breakpoint]`
         width: ${percent}%;
-      `.join("")
+      `.join(""),
         );
       } else {
-        console.log(
-          `breakpoint "${breakpoint}" doesn't exist or it hasn't been defined on your theme`
-        );
+        console.log(`breakpoint "${breakpoint}" doesn't exist or it hasn't been defined on your theme`);
       }
     });
   return rules.join(" ");

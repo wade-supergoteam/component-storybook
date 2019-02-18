@@ -1,18 +1,18 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 // $FlowIssue
-import get from 'lodash.get';
+import get from "lodash.get";
 // $FlowIssue
-import darken from 'polished/lib/color/darken';
+import darken from "polished/lib/color/darken";
 
-import { hoverFocus } from '../utils/hover';
-import { themeColorLevel } from '../utils/color-functions';
-import themeProp from '../utils/theme';
-import * as defaultTheme from './default-theme';
+import { hoverFocus } from "../utils/hover";
+import { themeColorLevel } from "../utils/color-functions";
+import themeProp from "../utils/theme";
+import * as defaultTheme from "./default-theme";
 
-import InputGroupItem from './ListGroupItem';
+import InputGroupItem from "./ListGroupItem";
 
 const {
   listGroupHoverBg,
@@ -23,70 +23,46 @@ const {
   listGroupActionActiveColor,
   listGroupActiveColor,
   listGroupActionActiveBg,
-  listGroupActiveBg
+  listGroupActiveBg,
 } = defaultTheme;
 
 // TODO: it has a .withComponent before
 const ListGroupButton = styled(InputGroupItem)`
   width: 100%;
-  color: ${themeProp('listGroupActionColor', listGroupActionColor)};
+  color: ${themeProp("listGroupActionColor", listGroupActionColor)};
   text-align: inherit;
 
   ${({ active, theme }) =>
     active &&
     css`
-      color: ${get(
-        theme,
-        'listGroupActiveColor',
-        listGroupActiveColor
-      )}!important;
-      background-color: ${get(
-        theme,
-        'listGroupActiveBg',
-        listGroupActiveBg
-      )}!important;
+      color: ${get(theme, "listGroupActiveColor", listGroupActiveColor)}!important;
+      background-color: ${get(theme, "listGroupActiveBg", listGroupActiveBg)}!important;
     `}
 
   &:active {
-    color: ${themeProp(
-      'listGroupActionActiveColor',
-      listGroupActionActiveColor
-    )};
-    background-color: ${themeProp(
-      'listGroupActionActiveBg',
-      listGroupActionActiveBg
-    )};
+    color: ${themeProp("listGroupActionActiveColor", listGroupActionActiveColor)};
+    background-color: ${themeProp("listGroupActionActiveBg", listGroupActionActiveBg)};
   }
 
   /* Hover state */
   ${hoverFocus(css`
-    color: ${themeProp('listGroupActionHoverColor', listGroupActionHoverColor)};
+    color: ${themeProp("listGroupActionHoverColor", listGroupActionHoverColor)};
     text-decoration: none;
-    background-color: ${themeProp('listGroupHoverBg', listGroupHoverBg)};
+    background-color: ${themeProp("listGroupHoverBg", listGroupHoverBg)};
   `)}
 
   ${({ disabled, theme }) =>
     disabled &&
     css`
-      color: ${get(theme, 'listGroupDisabledColor', listGroupDisabledColor)};
-      background-color: ${get(
-        theme,
-        'listGroupDisabledBg',
-        listGroupDisabledBg
-      )};
+      color: ${get(theme, "listGroupDisabledColor", listGroupDisabledColor)};
+      background-color: ${get(theme, "listGroupDisabledBg", listGroupDisabledBg)};
     `}
 
   ${({ color, theme }) => {
     if (color) {
-      const colorX = themeColorLevel(
-        get(theme, `${color}`, defaultTheme[color]),
-        6
-      );
+      const colorX = themeColorLevel(get(theme, `${color}`, defaultTheme[color]), 6);
 
-      const backgroundX = themeColorLevel(
-        get(theme, `${color}`, defaultTheme[color]),
-        -9
-      );
+      const backgroundX = themeColorLevel(get(theme, `${color}`, defaultTheme[color]), -9);
 
       return css`
         ${hoverFocus(css`

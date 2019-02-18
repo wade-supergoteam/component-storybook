@@ -1,10 +1,10 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-import { enableRounded } from './defaultTheme';
+import { enableRounded } from "./defaultTheme";
 
-export function borderRadius(radius: string = '0.25rem') {
+export function borderRadius(radius: string = "0.25rem") {
   return (
     enableRounded &&
     css`

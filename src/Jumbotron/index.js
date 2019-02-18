@@ -1,3 +1,3 @@
-import Jumbotron from './Jumbotron';
+import Jumbotron from "./Jumbotron";
 
 export default Jumbotron;

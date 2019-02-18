@@ -1,15 +1,12 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import themeProp from '../utils/theme';
+import themeProp from "../utils/theme";
 
-import {
-  borderRightRadius,
-  borderLeftRadius
-} from '../utils/border-radius';
+import { borderRightRadius, borderLeftRadius } from "../utils/border-radius";
 
-import PaginationLink from './PaginationLink';
+import PaginationLink from "./PaginationLink";
 
 import {
   paginationActiveColor,
@@ -17,20 +14,20 @@ import {
   paginationActiveBorderColor,
   paginationDisabledColor,
   paginationDisabledBg,
-  paginationDisabledBorderColor
-} from './default-theme';
+  paginationDisabledBorderColor,
+} from "./default-theme";
 
 const PaginationItem = styled.li`
   &:first-child {
     ${PaginationLink} {
       margin-left: 0;
-      ${borderLeftRadius('0.25rem')};
+      ${borderLeftRadius("0.25rem")};
     }
   }
 
   &:last-child {
     ${PaginationLink} {
-      ${borderRightRadius('0.25rem')};
+      ${borderRightRadius("0.25rem")};
     }
   }
 
@@ -39,15 +36,9 @@ const PaginationItem = styled.li`
     css`
       ${PaginationLink} {
         z-index: 2;
-        color: ${themeProp('paginationActiveColor', paginationActiveColor)};
-        background-color: ${themeProp(
-          'paginationActiveBg',
-          paginationActiveBg
-        )};
-        border-color: ${themeProp(
-          'paginationActiveBorderColor',
-          paginationActiveBorderColor
-        )};
+        color: ${themeProp("paginationActiveColor", paginationActiveColor)};
+        background-color: ${themeProp("paginationActiveBg", paginationActiveBg)};
+        border-color: ${themeProp("paginationActiveBorderColor", paginationActiveBorderColor)};
       }
     `};
 
@@ -55,16 +46,10 @@ const PaginationItem = styled.li`
     props.disabled &&
     css`
       ${PaginationLink} {
-        color: ${themeProp('paginationDisabledColor', paginationDisabledColor)};
+        color: ${themeProp("paginationDisabledColor", paginationDisabledColor)};
         pointer-events: none;
-        background-color: ${themeProp(
-          'paginationDisabledBg',
-          paginationDisabledBg
-        )};
-        border-color: ${themeProp(
-          'paginationDisabledBorderColor',
-          paginationDisabledBorderColor
-        )};
+        background-color: ${themeProp("paginationDisabledBg", paginationDisabledBg)};
+        border-color: ${themeProp("paginationDisabledBorderColor", paginationDisabledBorderColor)};
       }
     `};
 `;

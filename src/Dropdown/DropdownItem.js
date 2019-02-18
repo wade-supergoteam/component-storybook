@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import { hoverFocus } from '../utils/hover';
-import themeProp from '../utils/theme';
+import { hoverFocus } from "../utils/hover";
+import themeProp from "../utils/theme";
 
 import {
   dropdownItemPaddingY,
@@ -13,53 +13,42 @@ import {
   dropdownLinkActiveColor,
   dropdownLinkActiveBg,
   dropdownLinkDisabledColor,
-  enableGradients
-} from './default-theme';
+  enableGradients,
+} from "./default-theme";
 
 const DropdownItem = styled.a`
   display: block;
   width: 100%;
-  padding: ${themeProp('dropdownItemPaddingY', dropdownItemPaddingY)}
-    ${themeProp('dropdownItemPaddingX', dropdownItemPaddingX)};
+  padding: ${themeProp("dropdownItemPaddingY", dropdownItemPaddingY)} ${themeProp("dropdownItemPaddingX", dropdownItemPaddingX)};
   clear: both;
-  font-weight: ${themeProp('fontWeightNormal', fontWeightNormal)};
-  color: ${themeProp('dropdownLinkColor', dropdownLinkColor)};
+  font-weight: ${themeProp("fontWeightNormal", fontWeightNormal)};
+  color: ${themeProp("dropdownLinkColor", dropdownLinkColor)};
   text-align: inherit;
   white-space: nowrap;
   background: none;
   border: 0;
 
   ${hoverFocus(css`
-    color: ${themeProp('dropdownLinkHoverColor', dropdownLinkHoverColor)};
+    color: ${themeProp("dropdownLinkHoverColor", dropdownLinkHoverColor)};
     text-decoration: none;
-    background-color: ${themeProp('dropdownLinkHoverBg', dropdownLinkHoverBg)};
+    background-color: ${themeProp("dropdownLinkHoverBg", dropdownLinkHoverBg)};
   `)};
 
   ${props =>
     props.active &&
     css`
-      color: ${themeProp(
-        'dropdownLinkActiveColor',
-        dropdownLinkActiveColor
-      )}!important;
+      color: ${themeProp("dropdownLinkActiveColor", dropdownLinkActiveColor)}!important;
       text-decoration: none;
-      background-color: ${themeProp(
-        'dropdownLinkActiveBg',
-        dropdownLinkActiveBg
-      )}!important;
+      background-color: ${themeProp("dropdownLinkActiveBg", dropdownLinkActiveBg)}!important;
     `};
 
   ${props =>
     props.disabled &&
     css`
-      color: ${themeProp(
-        'dropdownLinkDisabledColor',
-        dropdownLinkDisabledColor
-      )}!important;
+      color: ${themeProp("dropdownLinkDisabledColor", dropdownLinkDisabledColor)}!important;
       background-color: transparent !important;
 
-      ${themeProp('enableGradients', enableGradients) &&
-        'background-image: none;'};
+      ${themeProp("enableGradients", enableGradients) && "background-image: none;"};
     `};
 `;
 

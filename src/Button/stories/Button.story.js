@@ -1,20 +1,20 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
-import { ThemeProvider } from 'styled-components';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
+import { ThemeProvider } from "styled-components";
 
-import Button from '../Button';
+import Button from "../Button";
 
 const margin = { marginRight: 6, marginBottom: 6 };
 
-export default storiesOf('Buttons', module)
+export default storiesOf("Buttons", module)
   .addDecorator(
     host({
-      align: 'center',
-      width: 460
-    })
+      align: "center",
+      width: 460,
+    }),
   )
-  .add('Basic Buttons', () => (
+  .add("Basic Buttons", () => (
     <Fragment>
       <Button style={margin} color="primary">
         Primary
@@ -45,7 +45,7 @@ export default storiesOf('Buttons', module)
       </Button>
     </Fragment>
   ))
-  .add('Outline Buttons', () => (
+  .add("Outline Buttons", () => (
     <Fragment>
       <Button style={margin} color="primary" outline>
         Primary
@@ -73,7 +73,7 @@ export default storiesOf('Buttons', module)
       </Button>
     </Fragment>
   ))
-  .add('Disabled Buttons', () => (
+  .add("Disabled Buttons", () => (
     <Fragment>
       <Button style={margin} color="primary" disabled>
         Primary
@@ -101,7 +101,7 @@ export default storiesOf('Buttons', module)
       </Button>
     </Fragment>
   ))
-  .add('Large Buttons', () => (
+  .add("Large Buttons", () => (
     <Fragment>
       <Button style={margin} color="primary" size="large">
         Primary
@@ -132,7 +132,7 @@ export default storiesOf('Buttons', module)
       </Button>
     </Fragment>
   ))
-  .add('Small Buttons', () => (
+  .add("Small Buttons", () => (
     <Fragment>
       <Button style={margin} color="primary" size="small">
         Primary
@@ -163,7 +163,7 @@ export default storiesOf('Buttons', module)
       </Button>
     </Fragment>
   ))
-  .add('Block Buttons', () => (
+  .add("Block Buttons", () => (
     <Fragment>
       <Button style={margin} color="primary" block>
         Primary
@@ -194,7 +194,7 @@ export default storiesOf('Buttons', module)
       </Button>
     </Fragment>
   ))
-  .add('Link Buttons', () => (
+  .add("Link Buttons", () => (
     <Fragment>
       <Button as="a" href="#" style={margin} color="primary">
         Primary
@@ -226,20 +226,20 @@ export default storiesOf('Buttons', module)
     </Fragment>
   ))
 
-  .add('Custom Buttons', () => (
+  .add("Custom Buttons", () => (
     <ThemeProvider
       theme={{
         enableRounded: false,
-        primary: 'SkyBlue',
-        secondary: 'gray',
-        success: 'YellowGreen',
-        info: 'PowderBlue',
-        warning: 'GoldenRod',
-        danger: 'FireBrick',
-        light: 'ghostWhite',
-        dark: 'black',
-        linkColor: 'LightSkyBlue',
-        linkHoverColor: 'LightCoral'
+        primary: "SkyBlue",
+        secondary: "gray",
+        success: "YellowGreen",
+        info: "PowderBlue",
+        warning: "GoldenRod",
+        danger: "FireBrick",
+        light: "ghostWhite",
+        dark: "black",
+        linkColor: "LightSkyBlue",
+        linkHoverColor: "LightCoral",
       }}
     >
       <Fragment>

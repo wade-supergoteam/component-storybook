@@ -13,5 +13,5 @@ export const spacers = {
   s2: `${spacer * 0.5}rem`,
   s3: spacer,
   s4: `${spacer * 1.5}rem`,
-  s5: `${spacer * 3}rem`
+  s5: `${spacer * 3}rem`,
 };

@@ -1,16 +1,16 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
 
-import Pagination from '../Pagination';
+import Pagination from "../Pagination";
 
-export default storiesOf('Pagination', module)
+export default storiesOf("Pagination", module)
   .addDecorator(
     host({
-      align: 'center'
-    })
+      align: "center",
+    }),
   )
-  .add('Pagination', () => (
+  .add("Pagination", () => (
     <Pagination>
       <Pagination.Item>
         <Pagination.Link href="#">Previous</Pagination.Link>
@@ -29,7 +29,7 @@ export default storiesOf('Pagination', module)
       </Pagination.Item>
     </Pagination>
   ))
-  .add('Pagination large', () => (
+  .add("Pagination large", () => (
     <Pagination size="large">
       <Pagination.Item>
         <Pagination.Link href="#">Previous</Pagination.Link>
@@ -48,7 +48,7 @@ export default storiesOf('Pagination', module)
       </Pagination.Item>
     </Pagination>
   ))
-  .add('Pagination small', () => (
+  .add("Pagination small", () => (
     <Pagination size="small">
       <Pagination.Item>
         <Pagination.Link href="#">Previous</Pagination.Link>

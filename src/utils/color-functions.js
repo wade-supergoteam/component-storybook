@@ -1,9 +1,9 @@
 // @flow
 
 // $FlowIssue
-import mix from 'polished/lib/color/mix';
+import mix from "polished/lib/color/mix";
 // $FlowIssue
-import parseToRgb from 'polished/lib/color/parseToRgb';
+import parseToRgb from "polished/lib/color/parseToRgb";
 
 const themeColorInterval = 0.08;
 
@@ -16,15 +16,15 @@ export function colorYiq(color: string): string {
   const yiq = (r * 299 + g * 587 + b * 114) / 1000;
 
   if (yiq >= 187) {
-    return '#111';
+    return "#111";
   }
 
-  return '#fff';
+  return "#fff";
 }
 
 // Request a theme color level
 export function themeColorLevel(color: string, level: number = 0) {
-  const colorBase = level > 0 ? '#111' : '#fff';
+  const colorBase = level > 0 ? "#111" : "#fff";
 
   if (level < 0) {
     // Lighter values need a quick double negative for the Sass math to work

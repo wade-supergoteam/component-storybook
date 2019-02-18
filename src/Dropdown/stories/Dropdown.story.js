@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
-import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
+import { withKnobs, boolean, select } from "@storybook/addon-knobs/react";
 
-import { caretWidth } from '../../utils/defaultTheme';
+import { caretWidth } from "../../utils/defaultTheme";
 
-import Dropdown from '../Dropdown';
-import Button from '../../Button';
+import Dropdown from "../Dropdown";
+import Button from "../../Button";
 
 // TODO: it has a .extend before
 const ButtonWithCaret = styled(Button)`
@@ -18,7 +18,7 @@ const ButtonWithCaret = styled(Button)`
     height: 0;
     margin-left: ${caretWidth};
     vertical-align: middle;
-    content: '';
+    content: "";
     border-top: ${caretWidth} solid;
     border-right: ${caretWidth} solid transparent;
     border-left: ${caretWidth} solid transparent;
@@ -34,25 +34,20 @@ class DropdownWrapper extends Component {
     super(props, context);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
 
   toggleDropdown = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   };
 
   render() {
     return (
-      <Dropdown
-        isOpen={boolean('isOpen', this.state.isOpen)}
-        align={this.props.align}
-      >
-        <ButtonWithCaret onClick={this.toggleDropdown}>
-          Dropdown button
-        </ButtonWithCaret>
+      <Dropdown isOpen={boolean("isOpen", this.state.isOpen)} align={this.props.align}>
+        <ButtonWithCaret onClick={this.toggleDropdown}>Dropdown button</ButtonWithCaret>
         <Dropdown.Menu>
           <Dropdown.Item href="#">Action</Dropdown.Item>
           <Dropdown.Item href="#" active>
@@ -74,24 +69,20 @@ class DropdownWithDivider extends Component {
     super(props, context);
 
     this.state = {
-      isOpen: true
+      isOpen: true,
     };
   }
 
   toggleDropdown = () => {
     this.setState(({ isOpen }) => ({
-      isOpen: !isOpen
+      isOpen: !isOpen,
     }));
   };
 
   render() {
     return (
       <Dropdown isOpen={this.state.isOpen}>
-        <ButtonWithCaret
-          color="success"
-          size="large"
-          onClick={this.toggleDropdown}
-        >
+        <ButtonWithCaret color="success" size="large" onClick={this.toggleDropdown}>
           Dropdown button
         </ButtonWithCaret>
         <Dropdown.Menu>
@@ -114,13 +105,13 @@ class DropdownWithHeader extends Component {
     super(props, context);
 
     this.state = {
-      isOpen: true
+      isOpen: true,
     };
   }
 
   toggleDropdown = () => {
     this.setState(({ isOpen }) => ({
-      isOpen: !isOpen
+      isOpen: !isOpen,
     }));
   };
 
@@ -141,36 +132,36 @@ class DropdownWithHeader extends Component {
   }
 }
 
-export default storiesOf('Dropdown', module)
+export default storiesOf("Dropdown", module)
   .addDecorator(withKnobs)
   .addDecorator(
     host({
-      align: 'center'
-    })
+      align: "center",
+    }),
   )
-  .add('Dropdown', () => (
+  .add("Dropdown", () => (
     <DropdownWrapper
       align={select(
-        'Align',
+        "Align",
         {
-          left: 'Left',
-          right: 'Right'
+          left: "Left",
+          right: "Right",
         },
-        'left'
+        "left",
       )}
     />
   ))
-  .add('Dropdown right aligned', () => (
+  .add("Dropdown right aligned", () => (
     <DropdownWrapper
       align={select(
-        'Align',
+        "Align",
         {
-          left: 'Left',
-          right: 'Right'
+          left: "Left",
+          right: "Right",
         },
-        'right'
+        "right",
       )}
     />
   ))
-  .add('Dropdown with Divider', () => <DropdownWithDivider />)
-  .add('Dropdown with Header', () => <DropdownWithHeader />);
+  .add("Dropdown with Divider", () => <DropdownWithDivider />)
+  .add("Dropdown with Header", () => <DropdownWithHeader />);

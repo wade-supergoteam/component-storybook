@@ -1,13 +1,13 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 // $FlowIssue
-import stripUnit from 'polished/lib/helpers/stripUnit';
+import stripUnit from "polished/lib/helpers/stripUnit";
 
-import { spacer } from './config/spacing';
+import { spacer } from "./config/spacing";
 
-export function navDivider(color: string = '#e5e5e5') {
+export function navDivider(color: string = "#e5e5e5") {
   return css`
     height: 0;
     margin: ${spacer / 2}rem 0;

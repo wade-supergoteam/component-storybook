@@ -1,14 +1,14 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 // $FlowIssue
-import darken from 'polished/lib/color/darken';
+import darken from "polished/lib/color/darken";
 
-import { colorYiq } from '../../utils/color-functions';
-import { boxShadow } from '../../utils/box-shadow';
-import { gradientBg } from '../../utils/gradients';
-import { sassRgba } from '../../utils/sassRgba';
-import { hover } from '../../utils/hover';
+import { colorYiq } from "../../utils/color-functions";
+import { boxShadow } from "../../utils/box-shadow";
+import { gradientBg } from "../../utils/gradients";
+import { sassRgba } from "../../utils/sassRgba";
+import { hover } from "../../utils/hover";
 
 export function buttonVariant(
   background: string,
@@ -19,7 +19,7 @@ export function buttonVariant(
   hoverBackground: string = darken(0.075, background),
   hoverBorder: string = darken(0.1, border),
   activeBackground: string = darken(0.1, background),
-  activeBorder: string = darken(0.125, border)
+  activeBorder: string = darken(0.125, border),
 ) {
   return css`
     color: ${colorYiq(background)};

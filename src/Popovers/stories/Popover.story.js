@@ -1,18 +1,18 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
 
-import Popover from '../Popover';
+import Popover from "../Popover";
 
-export default storiesOf('Popovers', module)
+export default storiesOf("Popovers", module)
   .addDecorator(
     host({
-      title: 'The Popover, offers a more robust alternative to the Tooltip for displaying overlays of content.',
-      align: 'center',
-      width: 700
-    })
+      title: "The Popover, offers a more robust alternative to the Tooltip for displaying overlays of content.",
+      align: "center",
+      width: 700,
+    }),
   )
-  .add('Default Popovers', () => (
+  .add("Default Popovers", () => (
     <Fragment>
       <Popover title="Top" placement="top" arrowOffset={30} positionLeft={20}>
         This popover is placed <strong>top</strong> with positionLeft=20 and arrowOffset=30

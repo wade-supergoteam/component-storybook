@@ -1,16 +1,16 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
 
-import Heading from '../Heading';
+import Heading from "../Heading";
 
-export default storiesOf('Headings', module)
+export default storiesOf("Headings", module)
   .addDecorator(
     host({
-      align: 'center'
-    })
+      align: "center",
+    }),
   )
-  .add('Default', () => (
+  .add("Default", () => (
     <Fragment>
       <Heading as="h1">H1. Bootstrap heading</Heading>
       <Heading as="h2">H2. Bootstrap heading</Heading>
@@ -20,7 +20,7 @@ export default storiesOf('Headings', module)
       <Heading as="h6">H6. Bootstrap heading</Heading>
     </Fragment>
   ))
-  .add('With sizes', () => (
+  .add("With sizes", () => (
     <Fragment>
       <Heading as="h1" size="h6">
         H1. Bootstrap heading with H6 size

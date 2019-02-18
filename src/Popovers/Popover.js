@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import StyledPopover from './StyledPopover';
-import Heading from '../Heading';
+import StyledPopover from "./StyledPopover";
+import Heading from "../Heading";
 
 const Popover = ({ title, children, ...props }) => (
   <StyledPopover {...props}>
@@ -12,12 +12,12 @@ const Popover = ({ title, children, ...props }) => (
 );
 
 Popover.defaultProps = {
-  title: ''
+  title: "",
 };
 
 Popover.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Popover;

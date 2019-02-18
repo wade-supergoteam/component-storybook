@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 // import { boxShadow } from './box-shadow';
 
@@ -55,11 +55,7 @@ import { css } from 'styled-components';
 //
 // Example usage: change the default blue border and shadow to white for better
 // contrast against a dark gray background.
-export function formControlFocus(
-  inputFocusColor,
-  inputFocusBg,
-  inputFocusBorderColor
-) {
+export function formControlFocus(inputFocusColor, inputFocusBg, inputFocusBorderColor) {
   return css`
     &:focus {
       color: ${inputFocusColor};

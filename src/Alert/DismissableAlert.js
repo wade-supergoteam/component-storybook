@@ -1,14 +1,14 @@
-import React, { cloneElement, isValidElement } from 'react';
-import PropTypes from 'prop-types';
-import omit from 'lodash.omit';
-import styled, { css } from 'styled-components';
-import themeProp from '../utils/theme';
-import { hoverFocus } from '../utils/hover';
+import React, { cloneElement, isValidElement } from "react";
+import PropTypes from "prop-types";
+import omit from "lodash.omit";
+import styled, { css } from "styled-components";
+import themeProp from "../utils/theme";
+import { hoverFocus } from "../utils/hover";
 
-import Alert from './Alert';
-import CloseIcon from '../CloseIcon';
+import Alert from "./Alert";
+import CloseIcon from "../CloseIcon";
 
-import { alertPaddingY, alertPaddingX } from './default-theme';
+import { alertPaddingY, alertPaddingX } from "./default-theme";
 
 const closeIconStyles = css`
   position: absolute;
@@ -17,16 +17,14 @@ const closeIconStyles = css`
 `;
 
 export const StyledCloseIcon = styled(CloseIcon)`
-  padding: ${themeProp('alertPaddingY', alertPaddingY)}
-    ${themeProp('alertPaddingX', alertPaddingX)};
-  color: ${props => !props.theme.closeColor && 'inherit'};
+  padding: ${themeProp("alertPaddingY", alertPaddingY)} ${themeProp("alertPaddingX", alertPaddingX)};
+  color: ${props => !props.theme.closeColor && "inherit"};
   ${closeIconStyles};
 `;
 
 const CloseString = styled.button`
   ${closeIconStyles};
-  padding: ${themeProp('alertPaddingY', alertPaddingY)}
-    ${themeProp('alertPaddingX', alertPaddingX)};
+  padding: ${themeProp("alertPaddingY", alertPaddingY)} ${themeProp("alertPaddingX", alertPaddingX)};
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -41,7 +39,7 @@ const CloseString = styled.button`
 `;
 
 const DismissableAlert = props => {
-  const filteredProps = omit(props, ['onClose', 'closeIcon']);
+  const filteredProps = omit(props, ["onClose", "closeIcon"]);
   return (
     <Alert {...filteredProps}>
       {props.children}
@@ -58,11 +56,11 @@ const DismissableAlert = props => {
 };
 
 DismissableAlert.propTypes = {
-  closeIcon: PropTypes.oneOf([PropTypes.string, PropTypes.node])
+  closeIcon: PropTypes.oneOf([PropTypes.string, PropTypes.node]),
 };
 
 DismissableAlert.defaultProps = {
-  closeIcon: null
+  closeIcon: null,
 };
 
 export default DismissableAlert;

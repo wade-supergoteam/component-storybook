@@ -1,8 +1,8 @@
 //  @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-import { enableHoverMediaQuery } from './defaultTheme';
+import { enableHoverMediaQuery } from "./defaultTheme";
 
 export const hover = (content: any) => css`
   &:hover {

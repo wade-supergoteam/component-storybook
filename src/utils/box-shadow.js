@@ -1,8 +1,8 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-import { enableShadows } from './defaultTheme';
+import { enableShadows } from "./defaultTheme";
 
 export function boxShadow(shadow: string) {
   if (enableShadows) {

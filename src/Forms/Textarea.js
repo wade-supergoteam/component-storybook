@@ -1,5 +1,5 @@
-import Input from './Input';
+import Input from "./Input";
 
-const Textarea = Input.withComponent('textarea');
+const Textarea = Input.withComponent("textarea");
 
 export default Textarea;

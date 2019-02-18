@@ -1,15 +1,11 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 // $FlowIssue
-import darken from 'polished/lib/color/darken';
+import darken from "polished/lib/color/darken";
 
-export function alertVariant(
-  background: string,
-  border: string,
-  bodyColor: string
-) {
+export function alertVariant(background: string, border: string, bodyColor: string) {
   return css`
     color: ${bodyColor};
     background-color: ${background};

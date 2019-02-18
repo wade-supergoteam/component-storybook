@@ -1,14 +1,11 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-import { hover } from '../../utils/hover';
-import { sassRgba } from '../../utils/sassRgba';
+import { hover } from "../../utils/hover";
+import { sassRgba } from "../../utils/sassRgba";
 
-export function buttonOutlineVariant(
-  color: string,
-  colorHover: string = '#fff'
-) {
+export function buttonOutlineVariant(color: string, colorHover: string = "#fff") {
   return css`
     color: ${color};
     background-color: transparent;

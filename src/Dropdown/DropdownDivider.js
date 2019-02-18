@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import themeProp from '../utils/theme';
+import styled from "styled-components";
+import themeProp from "../utils/theme";
 
-import { navDivider } from '../utils/nav-divider';
+import { navDivider } from "../utils/nav-divider";
 
-import { dropdownDividerBg } from './default-theme';
+import { dropdownDividerBg } from "./default-theme";
 
 const DropdownDivider = styled.div`
-  ${navDivider(themeProp('dropdownDividerBg', dropdownDividerBg))};
+  ${navDivider(themeProp("dropdownDividerBg", dropdownDividerBg))};
 `;
 
 DropdownDivider.defaultProps = {};

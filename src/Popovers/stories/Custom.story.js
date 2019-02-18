@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
-import styled, { ThemeProvider } from 'styled-components';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
+import styled, { ThemeProvider } from "styled-components";
 
-import Popover from '../Popover';
+import Popover from "../Popover";
 
 const customTheme = {
-  popoverTitleBbg: 'green',
-  popoverBg: '#cce4ff',
-  popoverBorderColor: 'green'
+  popoverTitleBbg: "green",
+  popoverBg: "#cce4ff",
+  popoverBorderColor: "green",
 };
 
 const ColorChange = styled(Popover)`
@@ -17,14 +17,14 @@ const ColorChange = styled(Popover)`
   }
 `;
 
-export default storiesOf('Popovers', module)
+export default storiesOf("Popovers", module)
   .addDecorator(
     host({
-      align: 'center',
-      width: 700
-    })
+      align: "center",
+      width: 700,
+    }),
   )
-  .add('Customized Popovers', () => (
+  .add("Customized Popovers", () => (
     <ThemeProvider theme={customTheme}>
       <Fragment>
         <Popover title="Top" placement="top" arrowOffset={30} positionLeft={20}>

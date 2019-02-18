@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import themeProp from '../utils/theme';
+import themeProp from "../utils/theme";
 
-import { borderRadius } from '../utils/border-radius';
-import { boxShadow } from '../utils/box-shadow';
+import { borderRadius } from "../utils/border-radius";
+import { boxShadow } from "../utils/box-shadow";
 
 import {
   dropdownMinWidth,
@@ -16,28 +16,27 @@ import {
   dropdownBorderColor,
   dropdownBorderRadius,
   dropdownBoxShadow,
-  zIndexDropdown
-} from './default-theme';
+  zIndexDropdown,
+} from "./default-theme";
 
 const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
-  z-index: ${themeProp('zIndexDropdown', zIndexDropdown)};
+  z-index: ${themeProp("zIndexDropdown", zIndexDropdown)};
   display: none;
   float: left;
-  min-width: ${themeProp('dropdownMinWidth', dropdownMinWidth)};
-  padding: ${themeProp('dropdownPaddingY', dropdownPaddingY)} 0;
-  margin: ${themeProp('dropdownSpacer', dropdownSpacer)} 0 0;
-  font-size: ${themeProp('fontSizeBase', fontSizeBase)};
-  color: ${themeProp('bodyColor', bodyColor)};
+  min-width: ${themeProp("dropdownMinWidth", dropdownMinWidth)};
+  padding: ${themeProp("dropdownPaddingY", dropdownPaddingY)} 0;
+  margin: ${themeProp("dropdownSpacer", dropdownSpacer)} 0 0;
+  font-size: ${themeProp("fontSizeBase", fontSizeBase)};
+  color: ${themeProp("bodyColor", bodyColor)};
   text-align: left;
   list-style: none;
-  background-color: ${themeProp('dropdownBg', dropdownBg)};
+  background-color: ${themeProp("dropdownBg", dropdownBg)};
   background-clip: padding-box;
-  border: ${themeProp('dropdownBorderWidth', dropdownBorderWidth)} solid
-    ${themeProp('dropdownBorderColor', dropdownBorderColor)};
-  ${borderRadius(themeProp('dropdownBorderRadius', dropdownBorderRadius))};
-  ${boxShadow(themeProp('dropdownBoxShadow', dropdownBoxShadow))};
+  border: ${themeProp("dropdownBorderWidth", dropdownBorderWidth)} solid ${themeProp("dropdownBorderColor", dropdownBorderColor)};
+  ${borderRadius(themeProp("dropdownBorderRadius", dropdownBorderRadius))};
+  ${boxShadow(themeProp("dropdownBoxShadow", dropdownBoxShadow))};
 `;
 
 DropdownMenu.defaultProps = {};

@@ -1,17 +1,17 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 // $FlowIssue
-import { borderRadius } from 'polished';
+import { borderRadius } from "polished";
 // $FlowIssue
-import get from 'lodash.get';
+import get from "lodash.get";
 
-import { hoverFocus } from '../utils/hover';
-import listGroupItemVariant from './utils/list-group-item-variant';
-import themeProp from '../utils/theme';
-import { themeColorLevel } from '../utils/color-functions';
+import { hoverFocus } from "../utils/hover";
+import listGroupItemVariant from "./utils/list-group-item-variant";
+import themeProp from "../utils/theme";
+import { themeColorLevel } from "../utils/color-functions";
 
-import * as defaultTheme from './default-theme';
+import * as defaultTheme from "./default-theme";
 
 const {
   listGroupBg,
@@ -24,28 +24,28 @@ const {
   listGroupActiveBg,
   listGroupActiveBorderColor,
   listGroupDisabledColor,
-  listGroupDisabledBg
+  listGroupDisabledBg,
 } = defaultTheme;
 
 const ListGroupItem = styled.li`
   position: relative;
   display: block;
-  padding: ${themeProp('listGroupItemPaddingY', listGroupItemPaddingY)}
-    ${themeProp('listGroupItemPaddingX', listGroupItemPaddingX)};
+  padding: ${themeProp("listGroupItemPaddingY", listGroupItemPaddingY)}
+    ${themeProp("listGroupItemPaddingX", listGroupItemPaddingX)};
 
-  margin-bottom: -${themeProp('listGroupBorderWidth', listGroupBorderWidth)};
-  background-color: ${themeProp('listGroupBg', listGroupBg)};
+  margin-bottom: -${themeProp("listGroupBorderWidth", listGroupBorderWidth)};
+  background-color: ${themeProp("listGroupBg", listGroupBg)};
 
-  border: ${themeProp('listGroupBorderWidth', listGroupBorderWidth)} solid
-    ${themeProp('listGroupBorderColor', listGroupBorderColor)};
+  border: ${themeProp("listGroupBorderWidth", listGroupBorderWidth)} solid
+    ${themeProp("listGroupBorderColor", listGroupBorderColor)};
 
   &:first-child {
-    ${borderRadius('top', listGroupBorderRadius)};
+    ${borderRadius("top", listGroupBorderRadius)};
   }
 
   &:last-child {
     margin-bottom: 0;
-    ${borderRadius('bottom', listGroupBorderRadius)};
+    ${borderRadius("bottom", listGroupBorderRadius)};
   }
 
   ${hoverFocus(css`
@@ -56,25 +56,17 @@ const ListGroupItem = styled.li`
   ${({ disabled, theme }) =>
     disabled &&
     css`
-      color: ${get(theme, 'listGroupDisabledColor', listGroupDisabledColor)};
-      background-color: ${get(
-        theme,
-        'listGroupDisabledBg',
-        listGroupDisabledBg
-      )};
+      color: ${get(theme, "listGroupDisabledColor", listGroupDisabledColor)};
+      background-color: ${get(theme, "listGroupDisabledBg", listGroupDisabledBg)};
     `};
 
   ${({ active, theme }) =>
     active &&
     css`
       z-index: 2;
-      color: ${get(theme, 'listGroupActiveColor', listGroupActiveColor)};
-      background-color: ${get(theme, 'listGroupActiveBg', listGroupActiveBg)};
-      border-color: ${get(
-        theme,
-        'listGroupActiveBorderColor',
-        listGroupActiveBorderColor
-      )};
+      color: ${get(theme, "listGroupActiveColor", listGroupActiveColor)};
+      background-color: ${get(theme, "listGroupActiveBg", listGroupActiveBg)};
+      border-color: ${get(theme, "listGroupActiveBorderColor", listGroupActiveBorderColor)};
     `};
 
   ${({ color, theme }) =>
@@ -82,7 +74,7 @@ const ListGroupItem = styled.li`
     listGroupItemVariant(
       get(theme, `${color}`, defaultTheme[color]),
       themeColorLevel(get(theme, `${color}`, defaultTheme[color]), -9),
-      themeColorLevel(get(theme, `${color}`, defaultTheme[color]), 6)
+      themeColorLevel(get(theme, `${color}`, defaultTheme[color]), 6),
     )};
 `;
 

@@ -1,28 +1,28 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
 
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from "styled-components";
 
-import Badge from '../Badge';
+import Badge from "../Badge";
 
 const customTheme = {
   badgeFontWeight: 400,
-  badgePaddingY: '.23em',
-  badgePaddingX: '.5em',
-  badgeBorderRadius: '0'
+  badgePaddingY: ".23em",
+  badgePaddingX: ".5em",
+  badgeBorderRadius: "0",
 };
 
 const margin = { marginRight: 6, marginBottom: 6 };
 
-export default storiesOf('Badge', module)
+export default storiesOf("Badge", module)
   .addDecorator(
     host({
-      title: 'Small count and labeling component.',
-      align: 'center'
-    })
+      title: "Small count and labeling component.",
+      align: "center",
+    }),
   )
-  .add('Badges', () => (
+  .add("Badges", () => (
     <Fragment>
       <h1>
         Example heading <Badge color="secondary">New</Badge>
@@ -44,7 +44,7 @@ export default storiesOf('Badge', module)
       </h6>
     </Fragment>
   ))
-  .add('Color Badges', () => (
+  .add("Color Badges", () => (
     <Fragment>
       <Badge style={margin} color="primary">
         Primary
@@ -72,7 +72,7 @@ export default storiesOf('Badge', module)
       </Badge>
     </Fragment>
   ))
-  .add('Link Badges', () => (
+  .add("Link Badges", () => (
     <Fragment>
       <Badge.Link href="#" style={margin} color="primary">
         Primary
@@ -100,7 +100,7 @@ export default storiesOf('Badge', module)
       </Badge.Link>
     </Fragment>
   ))
-  .add('Pill Badges', () => (
+  .add("Pill Badges", () => (
     <Fragment>
       <Badge style={margin} color="primary" pill>
         Primary
@@ -128,7 +128,7 @@ export default storiesOf('Badge', module)
       </Badge>
     </Fragment>
   ))
-  .add('Squared badges', () => (
+  .add("Squared badges", () => (
     <ThemeProvider theme={customTheme}>
       <Fragment>
         <Badge style={margin} color="primary">

@@ -1,8 +1,8 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-import { enableTransitions, transitionBase } from './defaultTheme';
+import { enableTransitions, transitionBase } from "./defaultTheme";
 
 export const transition = (transitionType: string) => {
   if (enableTransitions) {

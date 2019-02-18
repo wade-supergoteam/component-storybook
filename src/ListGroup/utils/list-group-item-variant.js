@@ -1,12 +1,8 @@
 // @ flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-function listGroupItemVariant(
-  state: string,
-  background: string,
-  color: string
-) {
+function listGroupItemVariant(state: string, background: string, color: string) {
   return css`
     color: ${color};
     background-color: ${background};

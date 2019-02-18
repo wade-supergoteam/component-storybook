@@ -1,26 +1,23 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import styled from "styled-components";
+import PropTypes from "prop-types";
 
-import {
-  borderTopRadius,
-  borderBottomRadius
-} from '../utils/border-radius';
+import { borderTopRadius, borderBottomRadius } from "../utils/border-radius";
 
 const CardImage = styled.img`
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
 
   ${props =>
-    props.position === 'bottom'
+    props.position === "bottom"
       ? borderBottomRadius(props.theme.cardInnerBorderRadius)
       : borderTopRadius(props.theme.cardInnerBorderRadius)};
 `;
 
 CardImage.proptypes = {
-  position: 'top'
+  position: "top",
 };
 
 CardImage.proptypes = {
-  position: PropTypes.oneOf(['top', 'bottom'])
+  position: PropTypes.oneOf(["top", "bottom"]),
 };
 
 export default CardImage;

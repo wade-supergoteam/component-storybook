@@ -1,10 +1,10 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import themeProp from '../utils/theme';
+import themeProp from "../utils/theme";
 
-import { hoverFocus } from '../utils/hover';
+import { hoverFocus } from "../utils/hover";
 
 import {
   paginationPaddingY,
@@ -16,29 +16,25 @@ import {
   paginationHoverColor,
   paginationHoverBg,
   paginationHoverBorderColor,
-  paginationBorderWidth
-} from './default-theme';
+  paginationBorderWidth,
+} from "./default-theme";
 
 const PaginationLink = styled.a`
   position: relative;
   display: block;
-  padding: ${themeProp('paginationPaddingY', paginationPaddingY)}
-    ${themeProp('paginationPaddingX', paginationPaddingX)};
+  padding: ${themeProp("paginationPaddingY", paginationPaddingY)} ${themeProp("paginationPaddingX", paginationPaddingX)};
   margin-left: -1px;
-  line-height: ${themeProp('paginationLineHeight', paginationLineHeight)};
-  color: ${themeProp('paginationColor', paginationColor)};
-  background-color: ${themeProp('paginationBg', paginationBg)};
-  border: ${themeProp('paginationBorderWidth', paginationBorderWidth)} solid
-    ${themeProp('paginationBorderColor', paginationBorderColor)};
+  line-height: ${themeProp("paginationLineHeight", paginationLineHeight)};
+  color: ${themeProp("paginationColor", paginationColor)};
+  background-color: ${themeProp("paginationBg", paginationBg)};
+  border: ${themeProp("paginationBorderWidth", paginationBorderWidth)} solid
+    ${themeProp("paginationBorderColor", paginationBorderColor)};
 
   ${hoverFocus(css`
-    color: ${themeProp('paginationHoverColor', paginationHoverColor)};
+    color: ${themeProp("paginationHoverColor", paginationHoverColor)};
     text-decoration: none;
-    background-color: ${themeProp('paginationHoverBg', paginationHoverBg)};
-    border-color: ${themeProp(
-      'paginationHoverBorderColor',
-      paginationHoverBorderColor
-    )};
+    background-color: ${themeProp("paginationHoverBg", paginationHoverBg)};
+    border-color: ${themeProp("paginationHoverBorderColor", paginationHoverBorderColor)};
   `)};
 `;
 

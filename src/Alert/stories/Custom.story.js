@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
-import { action } from '@storybook/addon-actions';
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import { host } from "storybook-host";
+import { action } from "@storybook/addon-actions";
 
-import styled, { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from "styled-components";
 
-import Alert, { DismissableAlert } from '../index';
-import CloseIcon from '../../CloseIcon';
+import Alert, { DismissableAlert } from "../index";
+import CloseIcon from "../../CloseIcon";
 
 const StyledCloseIcon = styled(CloseIcon)`
   position: absolute;
@@ -17,50 +17,44 @@ const StyledCloseIcon = styled(CloseIcon)`
 `;
 
 const customTheme = {
-  alertPaddingY: '.5rem',
-  alertPaddingX: '1rem',
-  alertMarginBottom: '1rem',
-  alertBorderRadius: '0.5rem',
-  alertLinkFontWeight: 'normal',
-  alertBorderWidth: '2px',
+  alertPaddingY: ".5rem",
+  alertPaddingX: "1rem",
+  alertMarginBottom: "1rem",
+  alertBorderRadius: "0.5rem",
+  alertLinkFontWeight: "normal",
+  alertBorderWidth: "2px",
 
   alertBgLevel: -9,
   alertBorderLevel: -5,
-  alertColorLevel: 3
+  alertColorLevel: 3,
 };
 
 const customButtonTheme = {
   closeFontWeight: 700,
-  closeColor: 'red',
-  closeTextShadow: '0 1px 0 blue'
+  closeColor: "red",
+  closeTextShadow: "0 1px 0 blue",
 };
 
-export default storiesOf('Alert', module)
+export default storiesOf("Alert", module)
   .addDecorator(
     host({
-      align: 'center',
-      width: 700
-    })
+      align: "center",
+      width: 700,
+    }),
   )
-  .add('With custom Close Icon', () => (
+  .add("With custom Close Icon", () => (
     <ThemeProvider theme={customButtonTheme}>
       <Fragment>
-        <DismissableAlert
-          type="primary"
-          onClose={action('button-click')}
-          closeIcon={<StyledCloseIcon />}
-        >
-          This is a dark alert with <a href="#">an example link</a>. Give it a
-          click if you like.
+        <DismissableAlert type="primary" onClose={action("button-click")} closeIcon={<StyledCloseIcon />}>
+          This is a dark alert with <a href="#">an example link</a>. Give it a click if you like.
         </DismissableAlert>
-        <DismissableAlert type="warning" onClose={action('button-click')}>
-          This is a dark alert with <a href="#">an example link</a>. Give it a
-          click if you like.
+        <DismissableAlert type="warning" onClose={action("button-click")}>
+          This is a dark alert with <a href="#">an example link</a>. Give it a click if you like.
         </DismissableAlert>
       </Fragment>
     </ThemeProvider>
   ))
-  .add('With ThemeProvider', () => (
+  .add("With ThemeProvider", () => (
     <ThemeProvider theme={customTheme}>
       <Fragment>
         <Alert type="primary">This is a primary alert—check it out!</Alert>
