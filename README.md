@@ -1,4 +1,5 @@
 # Component-storybook
+> Based off of [styled-bootstrap](https://github.com/xDae/styled-bootstrap) component-storybook is the Super GO Team component libaray with linting, theming, react-storybook documentation and general company guide lines for component development.
 
 <img src="./docs/images/super-go-team.logo.png" alt="Super GO Team" width="250"/>
 
@@ -9,6 +10,7 @@
     * [Motivation](#motivation)
     * [Tools](#tools)
     * [Technologies](#technologies)
+    * [Getting Started](#🚀-getting-started)
     * [Contributing](#contributing)
     * [Team](#team)
     * [License](#license)
@@ -29,6 +31,15 @@ The following tools have been used in the core functionality of this library
 * [npm](https://www.npmjs.com/get-npm) - *Javascript package manager and environment*
 * [React](https://reactjs.org/) - *Declarative component based JSX. Write JavaScript then add HTML not the other way round.*
 
+
+## 🚀 Getting Started
+
+```
+npm install component-storybook --save
+npm start
+
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -41,18 +52,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-# component-storybook
-> Based off of [styled-bootstrap](https://github.com/xDae/styled-bootstrap) component-storybook is the Super GO Team component libaray with linting, theming, react-storybook documentation and general company guide lines for component development.
+<!-- 
 
 
 
-## 🚀 Getting Started
 
-```
-npm install component-storybook --save
-npm start
-
-```
 
 [![npm](https://img.shields.io/npm/dt/component-storybook.svg)](https://www.npmjs.com/package/component-storybook)
 [![npm](https://img.shields.io/npm/v/component-storybook.svg)](https://www.npmjs.com/package/component-storybook)
@@ -96,3 +100,4 @@ Please [open an issue](https://github.com/xDae/component-storybook/issues/new) f
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/xDae/component-storybook/compare).
 
+ -->
