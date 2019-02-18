@@ -13,7 +13,7 @@ import Heading from '../Heading';
 
 const DropdownHeader = styled(Heading)`
   display: block;
-  padding: ${themeProp('dropdownPaddingY', dropdownPaddingY)}
+  padding: ${themeProp('dropdownPaddingY', dropdownPaddingY)};
     ${themeProp('dropdownItemPaddingX', dropdownItemPaddingX)};
   margin-bottom: 0;
   font-size: ${themeProp('fontSizeSm', fontSizeSm)};
