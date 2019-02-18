@@ -15,7 +15,7 @@ export function colorYiq(color: string): string {
 
   const yiq = (r * 299 + g * 587 + b * 114) / 1000;
 
-  if (yiq >= 150) {
+  if (yiq >= 187) {
     return '#111';
   }
 
@@ -24,7 +24,7 @@ export function colorYiq(color: string): string {
 
 // Request a theme color level
 export function themeColorLevel(color: string, level: number = 0) {
-  const colorBase = level > 0 ? '#000' : '#fff';
+  const colorBase = level > 0 ? '#111' : '#fff';
 
   if (level < 0) {
     // Lighter values need a quick double negative for the Sass math to work
