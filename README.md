@@ -7,18 +7,27 @@
 * [**Example link to another page*](./docs/example-link-to-another-page.md#table-of-contents)
 
 * [Table of Contents](#table-of-contents)
-    * [Motivation](#motivation)
-    * [Tools](#tools)
-    * [Technologies](#technologies)
-    * [Getting Started](#🚀-getting-started)
-    * [Contributing](#contributing)
-    * [Team](#team)
+    * [💪 Motivation](#💪-motivation)
+    * [🚀 Quick Start](#🚀-quick-start)
+    * [⚒️ Tools](#⚒️-tools)
+    * [⚙️ Technologies](#⚙️-technologies)
+    * [📜 Scripts](#📜-scripts)
+    * [✒️ Contributing](#✒️-contributing)
+    * [🌟 Team](#🌟-team)
     * [License](#license)
 
-## Motivation
+## 💪 Motivation
 Provide 🔥 Super GO Team with reusable, themeable, code-covered and consistently documented visual components. Whilst primarily intended for display component any common abstractions can also be stored within this library. What should not be stored in this library is site or project specific functionality that can not be re-used without modification.
 
-## Tools
+
+## 🚀 Quick Start
+
+```
+npm install component-storybook --save
+npm start
+```
+
+## ⚒️ Tools
 The following tools have been used in the core functionality of this library
 
 * [Create React App](https://facebook.github.io/create-react-app/) - *Basic application tooling for react based applications. Most suited for dynamic applications*
@@ -26,24 +35,27 @@ The following tools have been used in the core functionality of this library
 * [Storybook](https://storybook.js.org/) - *Beautful documentation with powerful addons such as withKnobs(component interaction), withInfo(view react code), withStoryshot(take jest snapshots)*
 * [Styled Components](https://www.styled-components.com/) - *Use the best bits of ES6 and CSS to style your apps without stress 💅*
 
-## Technologies
+## ⚙️ Technologies
 * [Node](https://nodejs.org/en/) - *NodeJS runtime for Javascript*
 * [npm](https://www.npmjs.com/get-npm) - *Javascript package manager and environment*
 * [React](https://reactjs.org/) - *Declarative component based JSX. Write JavaScript then add HTML not the other way round.*
 
+## 📜 Scripts
+ * `build` - *Clean up and create a new static bundle*
+ * `build-bundle` - "rollup -c",(WIP)
+ * `build-packages` - "babel src/ --out-dir lib/ --copy-files",(WIP)
+ * `flow` - *Check types and display any potential issues.*,
+ * `clean` - *Tidy up old builds*,
+ * `lint:css` - "stylelint './src/components/**/*.js'",(WIP)
+ * `prepublish` - "npm run build",(WIP)
+ * `start` - *Start the application*,
+ * `test` - "react-scripts test --env=jsdom",(WIP)
+ * `prettier` - "prettier --write 'src/**/*.js'"(WIP)
 
-## 🚀 Getting Started
-
-```
-npm install component-storybook --save
-npm start
-
-```
-
-## Contributing
+## ✒️ Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Team 
+## 🌟 Team 
 - [Maintainer] Wade Montague <wade@superGOteam.com>
 - [Maintainer] Andy Hall <andy@superGOteam.com>
 - [Developer] Lusine Martirosyan <Lusine@superGOteam.com>
