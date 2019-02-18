@@ -10,12 +10,8 @@
   "license": "MIT",
   "author": "Jose Miguel Bejarano <yo@josemiguel.org>",
   "files": [
-    "lib",
-    "dist"
+    "lib"
   ],
-  "main": "dist/main.js",
-  "module": "dist/main.es.js",
-  "jsnext:main": "dist/main.es.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/xDae/styled-bootstrap.git"
