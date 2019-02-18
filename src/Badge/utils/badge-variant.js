@@ -1,10 +1,9 @@
 // @flow
 
-import { css } from 'styled-components';
 // $FlowIssue
-import darken from 'polished/lib/color/darken';
-
-import { colorYiq } from '../../utils/color-functions';
+import darken from "polished/lib/color/darken";
+import { css } from "styled-components";
+import { colorYiq } from "../../utils/color-functions";
 
 export function badgeVariant(color: string) {
   return css`

@@ -1,22 +1,21 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Transition from 'react-transition-group/Transition';
-import omit from 'lodash.omit';
-import styled, { css } from 'styled-components';
-
-import themeProp from '../utils/theme';
-import transitionCollapse from './default-theme';
+import omit from "lodash.omit";
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+import Transition from "react-transition-group/Transition";
+import styled, { css } from "styled-components";
+import themeProp from "../utils/theme";
+import transitionCollapse from "./default-theme";
 
 const Wrapper = styled.div`
-  ${({ status }) => status === 'exited' && 'display: none;'};
-  ${({ status }) => status === 'entered' && 'display: block;'};
+  ${({ status }) => status === "exited" && "display: none;"};
+  ${({ status }) => status === "entered" && "display: block;"};
 
   ${({ status }) =>
-    (status === 'exiting' || status === 'entering') &&
+    (status === "exiting" || status === "entering") &&
     css`
       height: 0;
       overflow: hidden;
-      transition: ${themeProp('transitionCollapse', transitionCollapse)};
+      transition: ${themeProp("transitionCollapse", transitionCollapse)};
     `};
 `;
 
@@ -24,26 +23,26 @@ const TransitionTimeouts = {
   Fade: 150, // $transition-fade
   Collapse: 350, // $transition-collapse
   Modal: 300, // $modal-transition
-  Carousel: 600 // $carousel-transition
+  Carousel: 600, // $carousel-transition
 };
 
 // Duplicated Transition.propType keys to ensure that Reactstrap builds
 // for distribution properly exclude these keys for nested child HTML attributes
 // since `react-transition-group` removes propTypes in production builds.
 const TransitionPropTypeKeys = [
-  'in',
-  'mountOnEnter',
-  'unmountOnExit',
-  'appear',
-  'enter',
-  'exit',
-  'timeout',
-  'onEnter',
-  'onEntering',
-  'onEntered',
-  'onExit',
-  'onExiting',
-  'onExited'
+  "in",
+  "mountOnEnter",
+  "unmountOnExit",
+  "appear",
+  "enter",
+  "exit",
+  "timeout",
+  "onEnter",
+  "onEntering",
+  "onEntered",
+  "onExit",
+  "onExiting",
+  "onExited",
 ];
 
 function getHeight(node) {
@@ -55,7 +54,7 @@ class Collapse extends Component {
     super(props);
 
     this.state = {
-      height: null
+      height: null,
     };
   }
 
@@ -117,16 +116,13 @@ class Collapse extends Component {
 Collapse.defaultProps = {
   ...Transition.defaultProps,
   isOpen: false,
-  timeout: TransitionTimeouts.Collapse
+  timeout: TransitionTimeouts.Collapse,
 };
 
 Collapse.propTypes = {
   ...Transition.propTypes,
   isOpen: PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ])
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
 
 export default Collapse;
