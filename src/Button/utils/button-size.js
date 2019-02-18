@@ -1,14 +1,8 @@
 // @flow
 
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
-export function buttonSize(
-  paddingY: string,
-  paddingX: string,
-  fontSize: string,
-  lineHeight: string,
-  borderRadius: number = 0
-) {
+export function buttonSize(paddingY: string, paddingX: string, fontSize: string, lineHeight: string, borderRadius: number = 0) {
   return css`
     padding: ${paddingY} ${paddingX};
     font-size: ${fontSize};

@@ -1,19 +1,15 @@
 // @flow
 
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-
-import themeProp from '../utils/theme';
-
-import { boxShadow } from '../utils/box-shadow';
-import { hover, hoverFocus } from '../utils/hover';
-import { transition } from '../utils/transition';
-
-import { buttonVariant } from './utils/button-variant';
-import { buttonSize } from './utils/button-size';
-import { buttonOutlineVariant } from './utils/button-outline-variant';
-
-import * as defaultTheme from './defaultTheme';
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { boxShadow } from "../utils/box-shadow";
+import { hover, hoverFocus } from "../utils/hover";
+import themeProp from "../utils/theme";
+import { transition } from "../utils/transition";
+import * as defaultTheme from "./defaultTheme";
+import { buttonOutlineVariant } from "./utils/button-outline-variant";
+import { buttonSize } from "./utils/button-size";
+import { buttonVariant } from "./utils/button-variant";
 
 const {
   enableShadows,
@@ -36,34 +32,34 @@ const {
   fontSizeSm,
   btnLineHeightSm,
   btnBorderRadiusSm,
-  btnTransition
+  btnTransition,
 } = defaultTheme;
 
 const Button = styled.button`
-  display: ${({ block }) => (block ? 'block' : 'inline-block')};
-  width: ${({ block }) => block && '100%'};
-  font-weight: ${themeProp('btnFontWeight')};
+  display: ${({ block }) => (block ? "block" : "inline-block")};
+  width: ${({ block }) => block && "100%"};
+  font-weight: ${themeProp("btnFontWeight")};
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: ${themeProp('btnBorderWidth', btnBorderWidth)} solid transparent;
+  border: ${themeProp("btnBorderWidth", btnBorderWidth)} solid transparent;
 
-  ${transition(themeProp('btnTransition', btnTransition))};
+  ${transition(themeProp("btnTransition", btnTransition))};
 
   /* Share hover and focus styles */
-  ${hoverFocus('text-decoration: none;')};
+  ${hoverFocus("text-decoration: none;")};
 
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: ${themeProp('btnFocusBoxShadow', btnFocusBoxShadow)};
+    box-shadow: ${themeProp("btnFocusBoxShadow", btnFocusBoxShadow)};
   }
 
   &.disabled,
   &:disabled {
-    opacity: ${themeProp('btnDisabledOpacity', btnDisabledOpacity)};
-    ${boxShadow('none')};
+    opacity: ${themeProp("btnDisabledOpacity", btnDisabledOpacity)};
+    ${boxShadow("none")};
   }
 
   /* Opinionated: add "hand" cursor to non-disabled .btn elements */
@@ -72,88 +68,81 @@ const Button = styled.button`
   }
 
   ${({ theme, color }) =>
-    color !== 'link' &&
+    color !== "link" &&
     buttonVariant(
       theme[color] || defaultTheme[color],
       theme[color] || defaultTheme[color],
       theme.enableShadows || enableShadows,
       theme.btnBoxShadow || btnBoxShadow,
-      theme.btnActiveBoxShadow
+      theme.btnActiveBoxShadow,
     )};
 
   ${({ color }) =>
-    color === 'link' &&
+    color === "link" &&
     css`
-      font-weight: ${themeProp('fontWeightNormal', 'normal')};
-      color: ${themeProp('linkColor', '#007bff')};
+      font-weight: ${themeProp("fontWeightNormal", "normal")};
+      color: ${themeProp("linkColor", "#007bff")};
       background-color: transparent;
 
 
 
       ${hover(css`
-        color: ${themeProp('linkHoverColor', '#0056b3')};
-        text-decoration: ${themeProp('linkHoverDecoration', 'underline')};
+        color: ${themeProp("linkHoverColor", "#0056b3")};
+        text-decoration: ${themeProp("linkHoverDecoration", "underline")};
         background-color: transparent;
         border-color: transparent;
       `)};
 
       &:focus,
       &.focus {
-        text-decoration: ${themeProp('linkHoverDecoration', 'underline')};
+        text-decoration: ${themeProp("linkHoverDecoration", "underline")};
         border-color: transparent;
         box-shadow: none;
       }
 
       &:disabled,
       &.disabled {
-        color: text-decoration: ${themeProp('btnLinkDisabledColor', '#6c757d')};
+        color: text-decoration: ${themeProp("btnLinkDisabledColor", "#6c757d")};
       }
     `};
 
-  ${({ theme, outline, color }) =>
-    outline && buttonOutlineVariant(theme[color] || defaultTheme[color])};
+  ${({ theme, outline, color }) => outline && buttonOutlineVariant(theme[color] || defaultTheme[color])};
 
   ${({ size, theme }) =>
-    size === 'normal' &&
+    size === "normal" &&
     buttonSize(
-      themeProp('btnPaddingY', btnPaddingY),
-      themeProp('btnPaddingX', btnPaddingX),
-      themeProp('fontSizeBase', fontSizeBase),
-      themeProp('btnLineHeight', btnLineHeight),
-      typeof theme.enableRounded === 'undefined'
-        ? themeProp('btnBorderRadius', btnBorderRadius)
-        : 0
+      themeProp("btnPaddingY", btnPaddingY),
+      themeProp("btnPaddingX", btnPaddingX),
+      themeProp("fontSizeBase", fontSizeBase),
+      themeProp("btnLineHeight", btnLineHeight),
+      typeof theme.enableRounded === "undefined" || theme.enableRounded ? themeProp("btnBorderRadius", btnBorderRadius) : 0,
     )};
 
   ${({ size, theme }) =>
-    size === 'small' &&
+    size === "small" &&
     buttonSize(
-      themeProp('btnPaddingYsm', btnPaddingYsm),
-      themeProp('btnPaddingXsm', btnPaddingXsm),
-      themeProp('fontSizeSm', fontSizeSm),
-      themeProp('btnLineHeightSm', btnLineHeightSm),
-      typeof theme.enableRounded === 'undefined'
-        ? themeProp('btnBorderRadiusSm', btnBorderRadiusSm)
-        : 0
+      themeProp("btnPaddingYsm", btnPaddingYsm),
+      themeProp("btnPaddingXsm", btnPaddingXsm),
+      themeProp("fontSizeSm", fontSizeSm),
+      themeProp("btnLineHeightSm", btnLineHeightSm),
+      typeof theme.enableRounded === "undefined" || theme.enableRounded ? themeProp("btnBorderRadiusSm", btnBorderRadiusSm) : 0,
     )};
 
   ${({ size, theme }) =>
-    size === 'large' &&
+    size === "large" &&
     buttonSize(
-      themeProp('btnPaddingYlg', btnPaddingYlg),
-      themeProp('btnPaddingXlg', btnPaddingXlg),
-      themeProp('fontSizeLg', fontSizeLg),
-      themeProp('btnLineHeightLg', btnLineHeightLg),
-      typeof theme.enableRounded === 'undefined'
-        ? themeProp('btnBorderRadiusLg', btnBorderRadiusLg)
-        : 0
+      themeProp("btnPaddingYlg", btnPaddingYlg),
+      themeProp("btnPaddingXlg", btnPaddingXlg),
+      themeProp("fontSizeLg", fontSizeLg),
+      themeProp("btnLineHeightLg", btnLineHeightLg),
+      typeof theme.enableRounded === "undefined" || theme.enableRounded ? themeProp("btnBorderRadiusLg", btnBorderRadiusLg) : 0,
     )};
 
   ${({ active }) =>
     active &&
     css`
       background-image: none;
-      ${boxShadow(themeProp('btnFocusBoxShadow', btnFocusBoxShadow))};
+      ${boxShadow(themeProp("btnFocusBoxShadow", btnFocusBoxShadow))};
     `};
 `;
 
@@ -162,9 +151,9 @@ const Button = styled.button`
 Button.defaultProps = {
   active: false,
   block: false,
-  color: 'primary',
-  size: 'normal',
-  outline: false
+  color: "primary",
+  size: "normal",
+  outline: false,
 };
 
 Button.propTypes = {
@@ -172,7 +161,7 @@ Button.propTypes = {
   block: PropTypes.bool,
   color: PropTypes.string,
   size: PropTypes.string,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
 };
 
 export default Button;

@@ -1,26 +1,30 @@
-import { configure, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
-import { withInfo } from '@storybook/addon-info';
+import { withKnobs, select } from "@storybook/addon-knobs/react";
+import { setOptions } from "@storybook/addon-options";
+import { addDecorator, configure } from "@storybook/react";
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import * as defaultTheme from "../src/utils/defaultTheme";
 
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+const Themes = {
+  default: {},
+  defaultTheme: defaultTheme,
+};
 
-// import defaultTheme from '../src/utils/default-theme';
-
-// addDecorator(story => (
-//   <ThemeProvider theme={defaultTheme}>{story()}</ThemeProvider>
-// ));
-
-
-setOptions({
-  name: 'styled-bootstrap',
-  url: 'https://github.com/xDae/styled-bootstrap'
+addDecorator(withKnobs);
+addDecorator(story => {
+  const content = story();
+  return <ThemeProvider theme={select("Theme", Themes, Themes["default"])}>{content}</ThemeProvider>;
 });
 
-const req = require.context('../src/', true, /.story.js$/);
+setOptions({
+  name: "component-storybook",
+  url: "https://gitlab.com/supergoteam/component-storybook",
+});
+
+const req = require.context("../src/", true, /.story.js$/);
 
 function loadStories() {
-  req.keys().forEach((filename) => req(filename))
+  req.keys().forEach(filename => req(filename));
 }
 
 configure(loadStories, module);

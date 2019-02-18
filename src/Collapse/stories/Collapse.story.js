@@ -1,11 +1,9 @@
-import React, { Fragment, Component } from 'react';
-
-import { storiesOf } from '@storybook/react';
-import { host } from 'storybook-host';
-import { withKnobs, boolean } from '@storybook/addon-knobs/react';
-import { action } from '@storybook/addon-actions';
-
-import { Collapse, Button, CardBody, Card } from '../../index';
+import { action } from "@storybook/addon-actions";
+import { boolean, withKnobs } from "@storybook/addon-knobs/react";
+import { storiesOf } from "@storybook/react";
+import React, { Component, Fragment } from "react";
+import { host } from "storybook-host";
+import { Button, Card, CardBody, Collapse } from "../../index";
 
 class Example extends Component {
   constructor(props) {
@@ -20,27 +18,21 @@ class Example extends Component {
   render() {
     return (
       <div>
-        <Button
-          color="primary"
-          onClick={this.toggle}
-          style={{ marginBottom: '0.5rem' }}
-        >
+        <Button color="primary" onClick={this.toggle} style={{ marginBottom: "0.5rem" }}>
           Toggle
         </Button>
         <Collapse
-          isOpen={boolean('isOpen', this.state.collapse)}
-          onEntering={action('onEntering Collapse')}
-          onEntered={action('onEntered Collapse')}
-          onExit={action('onExit Collapse')}
-          onExiting={action('onExiting Collapse')}
-          onExited={action('onExited Collapse')}
+          isOpen={boolean("isOpen", this.state.collapse)}
+          onEntering={action("onEntering Collapse")}
+          onEntered={action("onEntered Collapse")}
+          onExit={action("onExit Collapse")}
+          onExiting={action("onExiting Collapse")}
+          onExited={action("onExited Collapse")}
         >
           <Card>
             <CardBody>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. Nihil anim keffiyeh
-              helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident.
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </CardBody>
           </Card>
         </Collapse>
@@ -49,16 +41,16 @@ class Example extends Component {
   }
 }
 
-export default storiesOf('Collapse', module)
+export default storiesOf("Collapse", module)
   .addDecorator(withKnobs)
   .addDecorator(
     host({
-      title: 'Toggle the visibility of content across your project.',
-      align: 'center',
-      width: 420
-    })
+      title: "Toggle the visibility of content across your project.",
+      align: "center",
+      width: 420,
+    }),
   )
-  .add('Default Collapse', () => (
+  .add("Default Collapse", () => (
     <Fragment>
       <Example />
     </Fragment>
