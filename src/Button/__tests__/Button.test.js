@@ -1,10 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
+import React from "react";
+import renderer from "react-test-renderer";
+import Button from "../Button";
 
-import Button from './Button';
-
-test('it works', () => {
-  const wrapper = shallow(<Button />);
+test("it works", () => {
+  const wrapper = renderer.create(<Button />);
   expect(wrapper).toMatchSnapshot();
 });
