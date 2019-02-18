@@ -25,6 +25,7 @@
     "build-bundle": "rollup -c",
     "build-packages": "babel src/ --out-dir lib/ --copy-files",
     "build-storybook": "rimraf docs/storybook && build-storybook -o docs/storybook",
+    "flow": "flow",
     "clean": "rimraf lib && rimraf dist",
     "lint:css": "stylelint './src/components/**/*.js'",
     "prepublish": "npm run build",
