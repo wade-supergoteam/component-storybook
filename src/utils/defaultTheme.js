@@ -60,8 +60,8 @@ export const success: string = '#19f494';
 export const info: string = '#4d43cd';
 export const warning: string = '#f28a53';
 export const danger: string = '#eb4261';
-export const light: string = '#c2b7b7';
-export const dark: string = '#836f6f';
+export const light: string = '#f8f9fa';
+export const dark: string = '#343a40';
 
 
 // Options
