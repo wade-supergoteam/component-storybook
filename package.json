@@ -10,12 +10,10 @@
   "license": "MIT",
   "author": "Wade Montague <wade@supergoteam.com>",
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
-  "directories": {
-    "lib": "./lib"
-  },
-  "main": "./lib/index.js",
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/supergoteam/component-storybook.git"
