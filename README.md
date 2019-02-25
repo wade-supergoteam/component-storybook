@@ -41,6 +41,8 @@ The following tools have been used in the core functionality of this library
 * [React](https://reactjs.org/) - *Declarative component based JSX. Write JavaScript then add HTML not the other way round.*
 
 ## 📜 Scripts
+The following scripts be ran from the project root using `npm run` e.g, `npm run start` will start react and open the application.
+
  * `build` - *Clean up and create a new static bundle*
  * `build-bundle` - "rollup -c",(WIP)
  * `build-packages` - "babel src/ --out-dir lib/ --copy-files",(WIP)
