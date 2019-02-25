@@ -3,6 +3,7 @@
   "version": "0.1.10",
   "private": false,
   "description": "--",
+  "main": "./lib/index.js",
   "homepage": "https://gitlab.com/supergoteam/component-storybook",
   "bugs": {
     "url": "https://gitlab.com/supergoteam/component-storybook/issues"
