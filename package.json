@@ -1,20 +1,20 @@
 {
-  "name": "styled-bootstrap",
+  "name": "component-storybook",
   "version": "0.1.10",
   "private": false,
   "description": "--",
-  "homepage": "https://github.com/xDae/styled-bootstrap",
+  "homepage": "https://gitlab.com/supergoteam/component-storybook",
   "bugs": {
-    "url": "https://github.com/xDae/styled-bootstrap/issues"
+    "url": "https://gitlab.com/supergoteam/component-storybook/issues"
   },
   "license": "MIT",
-  "author": "Jose Miguel Bejarano <yo@josemiguel.org>",
+  "author": "Wade Montague <wade@supergoteam.com>",
   "files": [
     "lib"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xDae/styled-bootstrap.git"
+    "url": "https://gitlab.com/supergoteam/component-storybook.git"
   },
   "scripts": {
     "build": "npm run clean && npm run build-bundle && npm run build-packages",
