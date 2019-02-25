@@ -50,6 +50,7 @@ The following tools have been used in the core functionality of this library
  * `prepublish` - "npm run build",(WIP)
  * `start` - *Start the application*,
  * `test` - "react-scripts test --env=jsdom",(WIP)
+ * `test:coverage` "react-scripts test --env=jsdom --coverage" *Run test with cover coverage reporting, directly to console and /coverage/index.html*
  * `prettier` - "prettier --write 'src/**/*.js'"(WIP)
 
 ## ✒️ Contributing

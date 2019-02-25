@@ -28,6 +28,7 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9009",
     "test": "react-scripts test --env=jsdom",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "prettier": "prettier --write 'src/**/*.js'"
   },
   "dependencies": {
@@ -116,12 +117,19 @@
     "styled-components": "4.1.3"
   },
   "jest": {
-    "coverageReporters": [
-      "text-summary",
-      "lcov"
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/lib/**",
+      "!**/vendor/**"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary",
+      "html"
     ]
   },
   "lint-staged": {
