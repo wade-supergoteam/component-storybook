@@ -9,7 +9,7 @@ import Button from "../Button";
 const margin = { marginRight: 6, marginBottom: 6 };
 
 export default storiesOf("Buttons", module)
-.addDecorator(withInfo)
+  .addDecorator(withInfo)
   .addDecorator(
     host({
       align: "center",

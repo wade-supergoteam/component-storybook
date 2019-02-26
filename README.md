@@ -1,17 +1,19 @@
 # Component-storybook
 > Based off of [styled-bootstrap](https://github.com/xDae/styled-bootstrap) component-storybook is the Super GO Team component libaray with linting, theming, react-storybook documentation and general company guide lines for component development.
 
-<img src="./docs/images/super-go-team.logo.png" alt="Super GO Team" width="250"/>
+<img src="https://gitlab.com/supergoteam/component-storybook/raw/master/docs/images/super-go-team.logo.png" alt="Super GO Team" width="250"/>
 
 ## Table of Contents
-* [**Example link to another page*](./docs/example-link-to-another-page.md#table-of-contents)
 
 * [Table of Contents](#table-of-contents)
     * [💪 Motivation](#💪-motivation)
     * [🚀 Quick Start](#🚀-quick-start)
+      *[Working on it](#working-on-it)
+      *[Using it](#using-it)
     * [⚒️ Tools](#⚒️-tools)
     * [⚙️ Technologies](#⚙️-technologies)
     * [📜 Scripts](#📜-scripts)
+    * [🗄️ File Structure](#🗄️-file-structure)
     * [✒️ Contributing](#✒️-contributing)
     * [🌟 Team](#🌟-team)
     * [License](#license)
@@ -22,9 +24,39 @@ Provide 🔥 Super GO Team with reusable, themeable, code-covered and consistent
 
 ## 🚀 Quick Start
 
+
+### Working on it
+
+Git it, install it, run it. Simply run the following command and you are off ready to roll with the complete storybook.
+
 ```
-npm install component-storybook --save
-npm start
+git clone https://gitlab.com/supergoteam/component-storybook.git;
+cd component-storybook;
+npm install;
+npm start;
+```
+
+
+### Using it
+
+Out of the box you get grid-based layout and bootstrap-styled components. Each component can have its theme properties overwritten at component level or via `ThemeProvider` which can be used to overwrite the entire set. Finally, each component can be easily extented using styled-components (or not but thats what we use!).
+
+To use in your project include it in your package.json then simple import and use. Consider setting it up stand alone using the step in [Working on it](#working-on-it) or lets pretend you know what you are up to and just do the following.
+
+*Install package*
+```
+npm i component-storybook;
+```
+
+*Include a component*
+```
+import { Button } from "component-storybook"
+...
+
+<Button>I'm a button</Button>
+<Button outline>Butti'm better.</Button>
+
+...
 ```
 
 ## ⚒️ Tools
@@ -54,6 +86,49 @@ The following scripts be ran from the project root using `npm run` e.g, `npm run
  * `test` - "react-scripts test --env=jsdom",(WIP)
  * `test:coverage` "react-scripts test --env=jsdom --coverage" *Run test with cover coverage reporting, directly to console and /coverage/index.html*
  * `prettier` - "prettier --write 'src/**/*.js'"(WIP)
+
+ ## 🗄️ File Structure
+ There is a reasonable amount of noise in the root file structure due to linting, formatting, integrity and packaging tools, some of which are documented above in the scripts section. (WIP) It is likely that a breif synopsis of all of these tools and how Super GO Team will in the near future find their way into [process-and-tools](https://gitlab.com/supergoteam/process-and-tools).
+
+ src contains the majority of the fun stuff and in fact 90% of the working code base that will get exported to the distributed version of the repo. 
+
+### Component files
+`src/${ComponentName}/index.js` each component is in its own folder with a set of coupled files for testing, stories, styles and utils. Whilst we are generally against tight coupling, layers of abstraction here would be counter productive towards the accesibility of this package. K.I.S.S!
+
+`src/Button/__tests__/Button.test.js` jest test file that is ran using `npm test`. Test file will .test.js files will be ran automatically when in jest is watching.  /running `npm test:cover` in console will give you a text summary of current tests and coverage. It will also generate an interactive coverage report in `coverage/index.html`
+
+`src/Button/__test__/__snapshots__/*` jest will generate snapshots of components it has seen here on first run and can be compared later to notify you of any changes that might have occured.
+
+`src/Button/utils/*` some components will have utils which provide a subset of behaviours which are reused multiple times through out the main component or sibling components.
+
+`src/Button/Button.js` styled component that can be configured with theme overides and configuration props. Some components such as `Card` will have sibling styled components such as `CardHeader`, `CardBody` ect.
+
+`src/Button/defaultTheme.js` This really is the default theme, don't change this unless you are [Working on it](#working-on-it). For people [Using it](#using-it) this provides a complete set of all theme-properties that are available for overriding.
+
+`src/Button/index.js` Normalised folder structure, how do I know what each component provides? Just look in the index baby!.
+
+
+
+### Global files 
+ `src/index.js` to be made available for people using this repo externally (God damn it index - you had one job!!!), 
+ 
+ `src/utils/*` is an example of granular global styles which allow you to define, for example, padding or border-radius once and for it to be made available to all styled-components for glorious consitency. 
+ 
+ `src/utils/defaultTheme.js` is an example of a global theme that you could provide from your own project via <ThemeProvider> when importing this package. 
+
+### Storybook files
+Storybook files are split between two places. The global settings in .storybook which control which addons are available, which addons are enabled globally and within the config an example of how to implement a global `<ThemeProvider>`
+```
+  ./.storybook/
+  ./.storybook/addons.js - *Global addons registration for Storybook*
+  ./.storybook/config.js - *Global config for Storybook (checkout the ThemeProvider example!)*
+```
+
+The second place is at component level within each of the component directories. e.g. `src/Button/stories/Button.story.js`. These files are all loaded into the global story config and are what make up the Storybook documentation. 
+
+
+
+
 
 ## ✒️ Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
