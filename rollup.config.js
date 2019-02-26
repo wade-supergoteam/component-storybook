@@ -27,7 +27,6 @@ export default [
       }),
       resolve({
         extensions: ['.js', '.jsx'],
-        jsnext: true,
         main: true
       }),
       commonjs({
