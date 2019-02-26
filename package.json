@@ -1,6 +1,6 @@
 {
   "name": "component-storybook",
-  "version": "0.1.10",
+  "version": "0.1.14",
   "private": false,
   "description": "--",
   "homepage": "https://gitlab.com/supergoteam/component-storybook",
@@ -10,8 +10,11 @@
   "license": "MIT",
   "author": "Wade Montague <wade@supergoteam.com>",
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
+  "main": "dist/main.js",
+  "module": "dist/main.es.js",
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/supergoteam/component-storybook.git"
@@ -50,7 +53,7 @@
     "@babel/plugin-proposal-function-sent": "^7.0.0",
     "@babel/plugin-proposal-json-strings": "^7.0.0",
     "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
     "@babel/plugin-proposal-numeric-separator": "^7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
