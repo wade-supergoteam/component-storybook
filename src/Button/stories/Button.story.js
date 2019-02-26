@@ -2,12 +2,14 @@ import React, { Fragment } from "react";
 import { storiesOf } from "@storybook/react";
 import { host } from "storybook-host";
 import { ThemeProvider } from "styled-components";
+import { withInfo } from "@storybook/addon-info";
 
 import Button from "../Button";
 
 const margin = { marginRight: 6, marginBottom: 6 };
 
 export default storiesOf("Buttons", module)
+.addDecorator(withInfo)
   .addDecorator(
     host({
       align: "center",
