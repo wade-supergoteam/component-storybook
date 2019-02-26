@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Disable rounded variant 1`] = `
+<button
+  className="sc-bdVaJa hlOWJk"
+  color="primary"
+  size="normal"
+/>
+`;
+
+exports[`Outline variant 1`] = `
+<button
+  className="sc-bdVaJa eCgobD"
+  color="primary"
+  size="normal"
+/>
+`;
+
+exports[`Rounded variant 1`] = `
+<button
+  className="sc-bdVaJa eCgobD"
+  color="primary"
+  size="normal"
+/>
+`;
+
 exports[`it works 1`] = `
 <button
   className="sc-bdVaJa zXMdD"
