@@ -8,8 +8,8 @@
 * [Table of Contents](#table-of-contents)
     * [💪 Motivation](#💪-motivation)
     * [🚀 Quick Start](#🚀-quick-start)
-      *[Working on it](#working-on-it)
-      *[Using it](#using-it)
+      * [Working on it](#working-on-it)
+      * [Using it](#using-it)
     * [⚒️ Tools](#⚒️-tools)
     * [⚙️ Technologies](#⚙️-technologies)
     * [📜 Scripts](#📜-scripts)
@@ -87,7 +87,7 @@ The following scripts be ran from the project root using `npm run` e.g, `npm run
  * `test:coverage` "react-scripts test --env=jsdom --coverage" *Run test with cover coverage reporting, directly to console and /coverage/index.html*
  * `prettier` - "prettier --write 'src/**/*.js'"(WIP)
 
- ## 🗄️ File Structure
+## 🗄️ File Structure
  There is a reasonable amount of noise in the root file structure due to linting, formatting, integrity and packaging tools, some of which are documented above in the scripts section. (WIP) It is likely that a breif synopsis of all of these tools and how Super GO Team will in the near future find their way into [process-and-tools](https://gitlab.com/supergoteam/process-and-tools).
 
  src contains the majority of the fun stuff and in fact 90% of the working code base that will get exported to the distributed version of the repo. 
