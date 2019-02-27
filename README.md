@@ -93,7 +93,7 @@ The following scripts be ran from the project root using `npm run` e.g, `npm run
  src contains the majority of the fun stuff and in fact 90% of the working code base that will get exported to the distributed version of the repo. 
 
 ### Component files
-`src/${ComponentName}/index.js` each component is in its own folder with a set of coupled files for testing, stories, styles and utils. Whilst we are generally against tight coupling, layers of abstraction here would be counter productive towards the accesibility of this package. K.I.S.S!
+`src/${ComponentName}/index.js` each component is in its own folder with a set of coupled files for testing, stories, styles and utils. Whilst we are generally against tight coupling, layers of abstraction here would be counter productive towards the accesibility of this package. <span title="Keep">K</span>.<span title="It">I</span>.<span title="Simple">S</span>.<span title="Stupid">S</span>!
 
 `src/Button/__tests__/Button.test.js` jest test file that is ran using `npm test`. Test file will .test.js files will be ran automatically when in jest is watching.  /running `npm test:cover` in console will give you a text summary of current tests and coverage. It will also generate an interactive coverage report in `coverage/index.html`
 
