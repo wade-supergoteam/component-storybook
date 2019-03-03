@@ -15,13 +15,14 @@ const getGridHorizontalRules = ({ center }) => center && " text-align: center;";
 const getGridVerticalRules = ({ middle, bottom }) => {
   if (middle) {
     return "> * { vertical-align: middle; }";
-  } else if (bottom) {
+  }
+  if (bottom) {
     return "> * { vertical-align: bottom; }";
-  } else return;
+  }
+  return null;
 };
 
-const getGridGutterRules = ({ gutter, full }) => {
-  const value = gutter ? gutter : defaultGutter;
+const getGridGutterRules = ({ gutter = defaultGutter, full }) => {
   if (full) {
     return `
     margin-left: 0px;
@@ -29,14 +30,14 @@ const getGridGutterRules = ({ gutter, full }) => {
       padding-left: 0px;
     }
   `;
-  } else {
-    return `
-    margin-left: ${value * -1}px;
-    > * {
-      padding-left: ${value}px;
-    }
-  `;
   }
+
+  return `
+  margin-left: ${gutter * -1}px;
+  > * {
+    padding-left: ${gutter}px;
+  }
+`;
 };
 
 const getDirectionRules = ({ rev }) =>
@@ -53,8 +54,8 @@ const getDirectionRules = ({ rev }) =>
 const getGridItemMediaRules = ({ media, theme }) => {
   const rules = [];
   const mq = mediaQuery(theme.breakpoints);
-  media &&
-    Object.keys(media).forEach(function(breakpoint) {
+  if (media) {
+    Object.keys(media).forEach(breakpoint => {
       if (mq[breakpoint]) {
         const columns = media[breakpoint];
         const percent = columns * 100;
@@ -67,6 +68,7 @@ const getGridItemMediaRules = ({ media, theme }) => {
         console.log(`breakpoint "${breakpoint}" doesn't exist or it hasn't been defined on your theme`);
       }
     });
+  }
   return rules.join(" ");
 };
 

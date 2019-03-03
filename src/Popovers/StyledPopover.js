@@ -7,7 +7,7 @@ import { placementTop, placementBottom, placementRight, placementLeft } from "./
 
 const {
   popoverMaxWidth,
-  zInderxPopover,
+  zIndexPopover,
   popoverInnerPadding,
   popoverBg,
   popoverBorderWidth,
@@ -40,7 +40,7 @@ const StyledPopover = styled.div`
   position: absolute;
   top: ${({ positionTop }) => `${positionTop}px` || 0};
   left: ${({ positionLeft }) => `${positionLeft}px` || 0};
-  z-index: ${themeProp("zInderxPopover", zInderxPopover)};
+  z-index: ${themeProp("zIndexPopover", zIndexPopover)};
   display: block;
   max-width: ${themeProp("popoverMaxWidth", popoverMaxWidth)};
   padding: ${themeProp("popoverInnerPadding", popoverInnerPadding)};
