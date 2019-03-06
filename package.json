@@ -2,7 +2,7 @@
   "name": "component-storybook",
   "version": "0.1.14",
   "private": false,
-  "description": "--",
+  "description": "Configurable, themeable components that are documented with storybook, tested and covered with jest and formatted with love using prettier. Providing a easily extendable library of reusable components for anyone to use.",
   "homepage": "https://gitlab.com/supergoteam/component-storybook",
   "bugs": {
     "url": "https://gitlab.com/supergoteam/component-storybook/issues"
