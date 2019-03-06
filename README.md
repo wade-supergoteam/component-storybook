@@ -6,16 +6,16 @@
 ## Table of Contents
 
 * [Table of Contents](#table-of-contents)
-    * [💪 Motivation](#💪-motivation)
-    * [🚀 Quick Start](#🚀-quick-start)
+    * [💪 Motivation](#-motivation)
+    * [🚀 Quick Start](#-quick-start)
       * [Working on it](#working-on-it)
       * [Using it](#using-it)
-    * [⚒️ Tools](#⚒️-tools)
-    * [⚙️ Technologies](#⚙️-technologies)
-    * [📜 Scripts](#📜-scripts)
-    * [🗄️ File Structure](#🗄️-file-structure)
-    * [✒️ Contributing](#✒️-contributing)
-    * [🌟 Team](#🌟-team)
+    * [⚒️ Tools](#-tools)
+    * [⚙️ Technologies](#️-technologies)
+    * [📜 Scripts](#-scripts)
+    * [🗄️ File Structure](#-file-structure)
+    * [✒️ Contributing](#-contributing)
+    * [🌟 Team](#-team)
     * [License](#license)
 
 ## 💪 Motivation
