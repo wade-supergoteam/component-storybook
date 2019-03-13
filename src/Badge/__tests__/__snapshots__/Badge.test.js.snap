@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Badges 1`] = `
+<span
+  className="sc-bdVaJa crIvqj"
+  color="primary"
+/>
+`;
+
+exports[`Pill Badges 1`] = `
+<span
+  className="sc-bdVaJa buvDej"
+  color="primary"
+/>
+`;
+
+exports[`it works 1`] = `
+<span
+  className="sc-bdVaJa crIvqj"
+  color="primary"
+/>
+`;
