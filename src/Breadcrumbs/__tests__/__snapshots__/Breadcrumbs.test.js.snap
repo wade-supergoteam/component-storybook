@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`breadcrums is created 1`] = `
+<ol
+  className="sc-bdVaJa flmxlQ"
+/>
+`;
+
+exports[`create li element 1`] = `
+<li
+  aria-current={false}
+  className="sc-bwzfXH jjlExb"
+/>
+`;
