@@ -17,3 +17,8 @@ test("Card with Header", () => {
     const wrapper = renderer.create(<Card.Header />);
     expect(wrapper).toMatchSnapshot();
 });
+
+test("Card with Header", () => {
+    const wrapper = renderer.create(<Card.Footer />);
+    expect(wrapper).toMatchSnapshot();
+});
