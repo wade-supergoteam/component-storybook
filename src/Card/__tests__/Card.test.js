@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Card from "../Card";
+import Card from "../";
 import CardImage from "../CardImage";
 
 test("create card", () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Badge from "../Badge";
+import Badge from "../";
 
 test("it works", () => {
     const wrapper = renderer.create(<Badge />);
