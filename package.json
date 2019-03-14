@@ -125,7 +125,8 @@
       "**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/lib/**",
-      "!**/vendor/**"
+      "!**/vendor/**",
+      "!**/**.story.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
