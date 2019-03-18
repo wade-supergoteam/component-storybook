@@ -42,10 +42,51 @@ test("Custom Input", () => {
     expect(wrapper).toMatchSnapshot();
 });
 
+test("Input with enableRounded", () => {
+    const wrapper = renderer.create(<Input theme={{ enableRounded: true }}  />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Input with enableRounded false", () => {
+    const wrapper = renderer.create(<Input theme={{ enableRounded: false }}  />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Input with enableShadows", () => {
+    const wrapper = renderer.create(<Input theme={{ enableShadows: true }}  />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Input with enableShadows false", () => {
+    const wrapper = renderer.create(<Input theme={{ enableShadows: false }}  />);
+    expect(wrapper).toMatchSnapshot();
+});
+
 test("Create Select", () => {
     const wrapper = renderer.create(<Select />);
     expect(wrapper).toMatchSnapshot();
 });
+
+test("Create CustomSelect with rounded borders", () => {
+    const wrapper = renderer.create(<CustomSelect theme={{ enableRounded: true }} />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Create CustomSelect with enableRounded false", () => {
+    const wrapper = renderer.create(<CustomSelect theme={{ enableRounded: false }} />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Create CustomSelect large", () => {
+    const wrapper = renderer.create(<CustomSelect size="large" />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Create CustomSelect small", () => {
+    const wrapper = renderer.create(<CustomSelect size="small" />);
+    expect(wrapper).toMatchSnapshot();
+});
+
 
 test("Create Large Select", () => {
     const wrapper = renderer.create(<Select size="large" />);
