@@ -8,10 +8,16 @@ test("create card", () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test("With Image", () => {
-    const wrapper = renderer.create(<CardImage />);
+test("With Image position bottom", () => {
+    const wrapper = renderer.create(<CardImage position="bottom" />);
     expect(wrapper).toMatchSnapshot();
 });
+
+test("With Image", () => {
+    const wrapper = renderer.create(<CardImage position="top" />);
+    expect(wrapper).toMatchSnapshot();
+});
+
 
 test("Card with Header", () => {
     const wrapper = renderer.create(<Card.Header />);
