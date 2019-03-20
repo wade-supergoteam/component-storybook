@@ -1,14 +1,33 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import 'jest-styled-components'
 import ListGroupItem from "../ListGroupItem";
 import ListGroupButton from "../ListGroupButton";
 import ListGroupLink from "../ListGroupLink";
 import ListGroup from "../";
 
+
 test("Basic Example", () => {
     const wrapper = renderer.create(<ListGroup />);
     expect(wrapper).toMatchSnapshot();
 });
+
+test("ListGroupButton active", () => {
+    const wrapper = renderer.create(<ListGroupButton active />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("ListGroupButton disabled", () => {
+    const wrapper = renderer.create(<ListGroupButton disabled />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("ListGroupButton color", () => {
+    const wrapper = renderer.create(<ListGroupButton />).toJSON()
+    expect(wrapper).toHaveStyleRule('color', '#495057')
+    expect(wrapper).toHaveStyleRule('background-color', '#fff')
+});
+
 
 test("Flush List group", () => {
     const wrapper = renderer.create(<ListGroup flush />);
@@ -22,11 +41,6 @@ test("Disabled items", () => {
 
 test("Links", () => {
     const wrapper = renderer.create(<ListGroupLink href="#" />);
-    expect(wrapper).toMatchSnapshot();
-});
-
-test("Buttons", () => {
-    const wrapper = renderer.create(<ListGroupButton />);
     expect(wrapper).toMatchSnapshot();
 });
 
