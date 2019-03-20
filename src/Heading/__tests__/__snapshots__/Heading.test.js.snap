@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create H1 Default 1`] = `
+<h1
+  className="sc-bdVaJa fCrnLG"
+/>
+`;
+
+exports[`Create H1 With sizes, size H6 1`] = `
+<h1
+  className="sc-bdVaJa dAipnw"
+  size="h6"
+/>
+`;
+
+exports[`Create H1 with sizes, size H1 1`] = `
+<h6
+  className="sc-bdVaJa fCrnLG"
+  size="h1"
+/>
+`;

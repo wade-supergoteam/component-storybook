@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Example 1`] = `
+<ul
+  className="sc-bxivhb gFoUmm"
+/>
+`;
+
+exports[`Buttons 1`] = `
+<li
+  className="sc-bdVaJa sc-bwzfXH ocRaz"
+/>
+`;
+
+exports[`Disabled items 1`] = `
+<li
+  className="sc-bdVaJa kQsWJh"
+  disabled={true}
+/>
+`;
+
+exports[`Flush List group 1`] = `
+<ul
+  className="sc-bxivhb huWLJC"
+/>
+`;
+
+exports[`Links 1`] = `
+<a
+  className="sc-htpNat dXdgFK"
+  href="#"
+/>
+`;

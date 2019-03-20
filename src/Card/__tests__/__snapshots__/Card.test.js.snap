@@ -6,9 +6,21 @@ exports[`Card with Header 1`] = `
 />
 `;
 
+exports[`Card with Header 2`] = `
+<div
+  className="sc-htpNat fDAeZq"
+/>
+`;
+
 exports[`With Image 1`] = `
 <img
   className="sc-ifAKCX iSwMuJ"
+/>
+`;
+
+exports[`With Image position bottom 1`] = `
+<img
+  className="sc-ifAKCX gTiwhe"
 />
 `;
 

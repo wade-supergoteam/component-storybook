@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Pagination Item active 1`] = `
+<li
+  className="sc-bwzfXH kVzdrT"
+/>
+`;
+
+exports[`Create Pagination Item disabled 1`] = `
+<li
+  className="sc-bwzfXH gEzWvi"
+  disabled={true}
+/>
+`;
+
+exports[`Default Pagination 1`] = `
+<ul
+  className="sc-htpNat eyTibV"
+/>
+`;
+
+exports[`Pagination large 1`] = `
+<ul
+  className="sc-htpNat bQjkvL"
+  size="large"
+/>
+`;
+
+exports[`Pagination large 2`] = `
+<ul
+  className="sc-htpNat fjLBcq"
+  size="small"
+/>
+`;
