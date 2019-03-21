@@ -1,3 +1,4 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
 import Heading from "..";
@@ -33,6 +34,15 @@ test("Create h5 with sizes, size H5", () => {
 });
 
 test("Create h6 with sizes, size H1", () => {
-  const wrapper = renderer.create(<Heading as="h6" size="h1" />);
+  const wrapper = renderer.create(<Heading as="h6" size="h6" />);
+  expect(wrapper).toMatchSnapshot();
+});
+
+test("Create h6 with sizes, size H1", () => {
+  const wrapper = renderer.create(
+    <Heading as="h6" size="h6">
+      With child element
+    </Heading>,
+  );
   expect(wrapper).toMatchSnapshot();
 });
