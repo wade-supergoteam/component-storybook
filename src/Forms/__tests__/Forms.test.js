@@ -27,13 +27,18 @@ test("Create Input Field", () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test("Small Input", () => {
-    const wrapper = renderer.create(<Input size="small" />);
+test("Input Field disabled", () => {
+    const wrapper = renderer.create(<Input disabled />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Input Field small enabledRounded false", () => {
+    const wrapper = renderer.create(<Input size="small" theme= {{ enabledRounded: false }} />);
     expect(wrapper).toMatchSnapshot();
 });
 
 test("Large Input", () => {
-    const wrapper = renderer.create(<Input size="large" />);
+    const wrapper = renderer.create(<Input size="large" theme= {{ enabledRounded: true }} />);
     expect(wrapper).toMatchSnapshot();
 });
 
