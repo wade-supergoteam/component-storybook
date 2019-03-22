@@ -22,7 +22,7 @@ export default storiesOf("Headings", module)
   ))
   .add("With sizes", () => (
     <Fragment>
-      <Heading as="h1" size="h6">
+      <Heading as="h1" size="h6" data="something">
         H1. Bootstrap heading with H6 size
       </Heading>
       <Heading as="h2" size="h5">

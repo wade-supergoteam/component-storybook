@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create H1 Default 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 2.5rem;
+}
+
+<h1
+  className="c0"
+/>
+`;
+
+exports[`Create H1 With sizes, size H6 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 1rem;
+}
+
+<h1
+  className="c0"
+  size="h6"
+/>
+`;
+
+exports[`Create h2 with sizes, size h5 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+<h2
+  className="c0"
+  size="h5"
+/>
+`;
+
+exports[`Create h3 with sizes, size H4 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+<h3
+  className="c0"
+  size="h4"
+/>
+`;
+
+exports[`Create h4 with sizes, size H3 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 1.75rem;
+}
+
+<h4
+  className="c0"
+  size="h3"
+/>
+`;
+
+exports[`Create h5 with sizes, size H5 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 2rem;
+}
+
+<h5
+  className="c0"
+  size="h2"
+/>
+`;
+
+exports[`Create h6 with sizes, size H1 1`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 1rem;
+}
+
+<h6
+  className="c0"
+  size="h6"
+/>
+`;
+
+exports[`Create h6 with sizes, size H1 2`] = `
+.c0 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 1rem;
+}
+
+<h6
+  className="c0"
+  size="h6"
+>
+  With child element
+</h6>
+`;

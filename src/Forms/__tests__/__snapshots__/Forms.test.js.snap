@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create CustomSelect large 1`] = `
+<select
+  className="sc-ifAKCX jHapST"
+  size="large"
+/>
+`;
+
+exports[`Create CustomSelect small 1`] = `
+<select
+  className="sc-ifAKCX ihWeHO"
+  size="small"
+/>
+`;
+
+exports[`Create CustomSelect with enableRounded false 1`] = `
+<select
+  className="sc-ifAKCX SFHiV"
+  size={[Function]}
+/>
+`;
+
+exports[`Create CustomSelect with rounded borders 1`] = `
+<select
+  className="sc-ifAKCX lgHZOS"
+  size={[Function]}
+/>
+`;
+
+exports[`Create Input Field 1`] = `
+<input
+  className="sc-bdVaJa cHRGZp"
+  size={[Function]}
+/>
+`;
+
+exports[`Create Large Select 1`] = `
+<input
+  className="sc-bdVaJa sc-bwzfXH fvRpLT"
+  size="large"
+/>
+`;
+
+exports[`Create Select 1`] = `
+<input
+  className="sc-bdVaJa sc-bwzfXH eFaDfp"
+  size={[Function]}
+/>
+`;
+
+exports[`Create Small Select 1`] = `
+<input
+  className="sc-bdVaJa sc-bwzfXH jImCgD"
+  size="small"
+/>
+`;
+
+exports[`Create Textarea 1`] = `
+<textarea
+  className="sc-htpNat edctCP"
+/>
+`;
+
+exports[`Custom Input 1`] = `null`;
+
+exports[`Custom Select 1`] = `
+<select
+  className="sc-ifAKCX lgHZOS"
+  size={[Function]}
+/>
+`;
+
+exports[`Input with enableRounded 1`] = `
+<input
+  className="sc-bdVaJa cHRGZp"
+  size={[Function]}
+/>
+`;
+
+exports[`Input with enableRounded false 1`] = `
+<input
+  className="sc-bdVaJa eExobB"
+  size={[Function]}
+/>
+`;
+
+exports[`Input with enableShadows 1`] = `
+<input
+  className="sc-bdVaJa cHRGZp"
+  size={[Function]}
+/>
+`;
+
+exports[`Input with enableShadows false 1`] = `
+<input
+  className="sc-bdVaJa dhrwem"
+  size={[Function]}
+/>
+`;
+
+exports[`Large Input 1`] = `
+<input
+  className="sc-bdVaJa iGpphR"
+  size="large"
+/>
+`;
+
+exports[`Small Input 1`] = `
+<input
+  className="sc-bdVaJa gSgZv"
+  size="small"
+/>
+`;

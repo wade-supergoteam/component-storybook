@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Default 1`] = `
+<div
+  className="sc-bdVaJa hQCgur"
+/>
+`;
+
+exports[`Fluid Jumbotron 1`] = `
+<div
+  className="sc-bdVaJa bPsZxt"
+/>
+`;

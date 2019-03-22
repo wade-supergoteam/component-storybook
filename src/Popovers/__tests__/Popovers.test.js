@@ -31,6 +31,11 @@ test("Default Popovers right", () => {
     expect(wrapper).toMatchSnapshot();
 });
 
+test("Default Popovers right", () => {
+    const wrapper = renderer.create(<Popovers title="right" />);
+    expect(wrapper).toMatchSnapshot();
+});
+
 const customTheme = {
     popoverTitleBbg: "green",
     popoverBg: "#cce4ff",
