@@ -1,5 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import 'jest-styled-components'
+
 import { Grid, GridItem } from "../";
 import { defaulttheme } from "../default-theme";
 
@@ -21,23 +23,23 @@ test("Create Default Grid with getGridVerticalRules", () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test("Create Default Grid with getGridVerticalRules2", () => {
-    const wrapper = renderer.create(<Grid getGridVerticalRules="bottom" />);
+test("Grid bottom", () => {
+    const wrapper = renderer.create(<Grid bottom />)
     expect(wrapper).toMatchSnapshot();
 });
 
-test("Create Default Grid with getGridVerticalRules2", () => {
-    const wrapper = renderer.create(<Grid getGridGutterRules="full" />);
-    expect(wrapper).toMatchSnapshot();
-});
-
-test("Create Default Grid with default theme", () => {
-    const wrapper = renderer.create(<Grid getGridGutterRules />);
+test("Grid with props", () => {
+    const wrapper = renderer.create(<Grid full defaultGutter rev />)
     expect(wrapper).toMatchSnapshot();
 });
 
 test("Middle Center Grid", () => {
     const wrapper = renderer.create(<Grid middle center />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Grid item debug", () => {
+    const wrapper = renderer.create(<GridItem debug={("Debug", debugDefault)} />)
     expect(wrapper).toMatchSnapshot();
 });
 
