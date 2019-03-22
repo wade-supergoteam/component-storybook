@@ -50,7 +50,7 @@ const getDirectionRules = ({ rev }) =>
       text-align: left;
     }
   `;
-
+/* istanbul ignore next */
 const getGridItemMediaRules = ({ media, theme }) => {
   const rules = [];
   const mq = mediaQuery(theme.breakpoints);
