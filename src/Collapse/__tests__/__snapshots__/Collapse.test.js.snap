@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapse with status entered 1`] = `
+<div
+  className="sc-bdVaJa gtywye"
+  style={Object {}}
+/>
+`;
+
+exports[`Collapse with status exited 1`] = `
+<div
+  className="sc-bdVaJa bkyCUw"
+  style={Object {}}
+/>
+`;
+
+exports[`Collapse with status exiting 1`] = `
+<div
+  className="sc-bdVaJa hBMUMD"
+  style={Object {}}
+/>
+`;
+
+exports[`it works 1`] = `
+<div
+  className="sc-bdVaJa bkyCUw"
+  style={Object {}}
+/>
+`;

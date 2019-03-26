@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`active Dropdown 1`] = `
+<a
+  className="sc-htpNat bQhpUB"
+/>
+`;
+
+exports[`create dropdown 1`] = `
+<div
+  className="sc-EHOje gWqStD"
+/>
+`;
+
+exports[`disabled Dropdown 1`] = `
+<a
+  className="sc-htpNat kEVpvc"
+  disabled={true}
+/>
+`;
+
+exports[`disabled isOpen 1`] = `
+<div
+  className="sc-EHOje iVgnzH"
+/>
+`;
+
+exports[`dropdown isOpen flase 1`] = `
+<div
+  className="sc-EHOje gWqStD"
+/>
+`;
+
+exports[`dropdown with dropdownMenu left 1`] = `
+<div
+  className="sc-EHOje gWqStD"
+>
+  <div
+    className="sc-bxivhb gWYWXH"
+  />
+</div>
+`;
+
+exports[`dropdown with dropdownMenu right 1`] = `
+<div
+  className="sc-EHOje gWqStD"
+>
+  <div
+    className="sc-bxivhb gWYWXH"
+  />
+</div>
+`;

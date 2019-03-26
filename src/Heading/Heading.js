@@ -1,15 +1,11 @@
-import { createElement } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import omit from "lodash.omit";
 
 import themeProp from "../utils/theme";
 
 import * as defaultTheme from "./default-theme";
 
 const { headingsMarginBottom, headingsFontFamily, headingsFontWeight, headingsLineHeight, headingsColor } = defaultTheme;
-
-const Element = ({ as, children, ...props }) => createElement(as, omit(props, ["as", "size"]), children);
 
 const Heading = styled(Element)`
   margin-bottom: ${themeProp("headingsMarginBottom", headingsMarginBottom)};

@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Card from "../Card";
+import Card from "../";
 import CardImage from "../CardImage";
 
 test("create card", () => {
@@ -8,12 +8,23 @@ test("create card", () => {
     expect(wrapper).toMatchSnapshot();
 });
 
+test("With Image position bottom", () => {
+    const wrapper = renderer.create(<CardImage position="bottom" />);
+    expect(wrapper).toMatchSnapshot();
+});
+
 test("With Image", () => {
-    const wrapper = renderer.create(<CardImage />);
+    const wrapper = renderer.create(<CardImage position="top" />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+
+test("Card with Header", () => {
+    const wrapper = renderer.create(<Card.Header />);
     expect(wrapper).toMatchSnapshot();
 });
 
 test("Card with Header", () => {
-    const wrapper = renderer.create(<Card.Header />);
+    const wrapper = renderer.create(<Card.Footer />);
     expect(wrapper).toMatchSnapshot();
 });

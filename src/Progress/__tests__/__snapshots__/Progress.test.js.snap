@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Progress 1`] = `
+<div
+  className="sc-bwzfXH djjGAO"
+>
+  <div
+    className="sc-bdVaJa duOSIu"
+    role="progressbar"
+    width={undefined}
+  />
+</div>
+`;

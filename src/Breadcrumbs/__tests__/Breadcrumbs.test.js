@@ -1,12 +1,13 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Breadcrumb from "../Breadcrumb";
+import Breadcrumb from "../";
 
-test("breadcrums is created", () => {
+test("Breadcrums is created", () => {
     const wrapper = renderer.create(<Breadcrumb />);
     expect(wrapper).toMatchSnapshot();
 });
-test("create li element", () => {
-    const wrapper = renderer.create(<Breadcrumb.Item />);
+
+test("Breadcrums item", () => {
+    const wrapper = renderer.create(<Breadcrumb.Item active />);
     expect(wrapper).toMatchSnapshot();
 });

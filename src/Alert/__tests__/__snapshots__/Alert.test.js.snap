@@ -1,8 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
+exports[`Create Alert 1`] = `
 <div
   className="sc-bdVaJa ZfKoK"
   type="primary"
 />
+`;
+
+exports[`Create DismissableAlert 1`] = `
+<div
+  className="sc-bdVaJa ZfKoK"
+  type="primary"
+>
+  <button
+    className="sc-bxivhb cNXQUH"
+    onClick={undefined}
+  />
+  <button
+    aria-label="Close"
+    className="sc-htpNat bKWPFO sc-bwzfXH iFILon"
+    onClick={undefined}
+  >
+    <span
+      aria-hidden="true"
+    >
+      ×
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Create DismissableAlert with onClose 1`] = `
+<div
+  className="sc-bdVaJa ZfKoK"
+  type="primary"
+>
+  <button
+    className="sc-bxivhb cNXQUH"
+    onClick={[Function]}
+  />
+  <button
+    aria-label="Close"
+    className="sc-htpNat bKWPFO sc-bwzfXH iFILon"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden="true"
+    >
+      ×
+    </span>
+  </button>
+</div>
 `;
