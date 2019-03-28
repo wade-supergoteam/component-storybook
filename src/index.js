@@ -12,7 +12,7 @@ export { default as CloseIcon } from "./CloseIcon";
 export { default as Dropdown, DropdownHeader, DropdownItem, DropdownMenu, DropdownDivider } from "./Dropdown";
 
 export { default as FormGroup, CustomSelect, Input, Select, Textarea } from "./Forms";
-export { default as Grid } from "./Grid";
+export { Grid, GridItem } from "./Grid";
 
 export { default as Heading } from "./Heading";
 export { default as Jumbotron } from "./Jumbotron";
