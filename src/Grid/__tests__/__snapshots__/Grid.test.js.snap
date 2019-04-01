@@ -150,7 +150,7 @@ exports[`Grid item 2 1`] = `
 
 exports[`Grid item debug 1`] = `
 .c0 {
-  background-color: rgba(192,192,192,0.6664250216017082);
+  background-color: rgba(192,192,192,0.17775145431929396);
   width: NaN%;
 }
 

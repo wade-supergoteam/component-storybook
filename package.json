@@ -126,6 +126,8 @@
       "!**/node_modules/**",
       "!**/lib/**",
       "!**/vendor/**",
+      "!**/dist/**",
+      "!**/coverage/**",
       "!**/**.story.js"
     ],
     "snapshotSerializers": [
