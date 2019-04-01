@@ -8,8 +8,9 @@
 * [Table of Contents](#table-of-contents)
     * [💪 Motivation](#-motivation)
     * [🚀 Quick Start](#-quick-start)
-      * [Working on it](#working-on-it)
-      * [Using it](#using-it)
+      * [🔎 Standards](#-standards)
+        * [Working on it](#working-on-it)
+        * [Using it](#using-it)
     * [⚒️ Tools](#-tools)
     * [⚙️ Technologies](#️-technologies)
     * [📜 Scripts](#-scripts)
@@ -24,8 +25,10 @@ Provide 🔥 Super GO Team with reusable, themeable, code-covered and consistent
 
 ## 🚀 Quick Start
 
+### 🔎 Standards
+For the pleasure of everyone and the sainity of the maintainers we use the following code standards/linting tools. `flow`, `eslint`, `prettier` details of which can be found in the [📜 Scripts](#📜-scripts) section for post work cleanups. However we strongly recomend you find and configure the corrosponding addons within your coding editor. (WIP)Currently these aren't enfored by git hooks but this is something we will be implementing soonᵀᴹ 
 
-### Working on it
+#### Working on it
 
 Git it, install it, run it. Simply run the following command and you are off ready to roll with the complete storybook.
 
@@ -37,7 +40,7 @@ npm start;
 ```
 
 
-### Using it
+#### Using it
 
 Out of the box you get grid-based layout and bootstrap-styled components. Each component can have its theme properties overwritten at component level or via `ThemeProvider` which can be used to overwrite the entire set. Finally, each component can be easily extented using styled-components (or not but thats what we use!).
 
