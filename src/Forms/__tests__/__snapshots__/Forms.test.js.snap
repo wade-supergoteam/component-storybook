@@ -71,6 +71,21 @@ exports[`Custom Select 1`] = `
 />
 `;
 
+exports[`Input Field disabled 1`] = `
+<input
+  className="sc-bdVaJa kMEKHz"
+  disabled={true}
+  size={[Function]}
+/>
+`;
+
+exports[`Input Field small enabledRounded false 1`] = `
+<input
+  className="sc-bdVaJa gSgZv"
+  size="small"
+/>
+`;
+
 exports[`Input with enableRounded 1`] = `
 <input
   className="sc-bdVaJa cHRGZp"
