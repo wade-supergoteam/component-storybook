@@ -1,18 +1,16 @@
-import styled from "styled-components";
 import PropTypes from "prop-types";
-import themeProp from "../utils/theme";
-
+import styled from "styled-components";
 import { borderRadius } from "../utils/border-radius";
-
+import themeProp from "../utils/theme";
 import {
-  breadcrumbPaddingY,
-  breadcrumbPaddingX,
+  breadcrumbActiveColor,
+  breadcrumbBg,
+  breadcrumbDivider,
+  breadcrumbDividerColor,
   breadcrumbItemPadding,
   breadcrumbMarginBottom,
-  breadcrumbBg,
-  breadcrumbDividerColor,
-  breadcrumbActiveColor,
-  breadcrumbDivider,
+  breadcrumbPaddingX,
+  breadcrumbPaddingY,
 } from "./default-theme";
 
 const Breadcrumb = styled.ol`
