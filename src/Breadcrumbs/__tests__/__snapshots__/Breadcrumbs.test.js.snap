@@ -19,9 +19,9 @@ exports[`breadcrums is created 1`] = `
 />
 `;
 
-exports[`create li element 1`] = `
+exports[`Breadcrums item 1`] = `
 <li
-  aria-current={false}
-  className="sc-bwzfXH jjlExb"
+  aria-current="page"
+  className="sc-bwzfXH hhqCxF"
 />
 `;

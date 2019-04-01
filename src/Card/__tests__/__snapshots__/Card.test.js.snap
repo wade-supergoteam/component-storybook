@@ -2,7 +2,13 @@
 
 exports[`Card with Header 1`] = `
 <div
-  className="sc-bdVaJa frOTaF"
+  className="sc-bdVaJa cpBMhQ"
+/>
+`;
+
+exports[`Card with Header 2`] = `
+<div
+  className="sc-htpNat dvvGAg"
 />
 `;
 

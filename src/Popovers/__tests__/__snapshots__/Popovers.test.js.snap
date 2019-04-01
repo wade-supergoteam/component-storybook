@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customized Popovers 1`] = `null`;
+
+exports[`Default Popovers 1`] = `
+<div
+  className="sc-bdVaJa eQdIS"
+>
+  <h3
+    className="sc-bwzfXH gRgMOy"
+  >
+    Top
+  </h3>
+  <div />
+</div>
+`;
+
+exports[`Default Popovers bottom 1`] = `
+<div
+  className="sc-bdVaJa eIxeJC"
+>
+  <h3
+    className="sc-bwzfXH gRgMOy"
+  >
+    bottom
+  </h3>
+  <div />
+</div>
+`;
+
+exports[`Default Popovers left 1`] = `
+<div
+  className="sc-bdVaJa iGiOLk"
+>
+  <h3
+    className="sc-bwzfXH gRgMOy"
+  >
+    left
+  </h3>
+  <div />
+</div>
+`;
+
+exports[`Default Popovers left 50% 1`] = `
+<div
+  className="sc-bdVaJa fyijYr"
+>
+  <h3
+    className="sc-bwzfXH gRgMOy"
+  >
+    left
+  </h3>
+  <div />
+</div>
+`;
+
+exports[`Default Popovers right 1`] = `
+<div
+  className="sc-bdVaJa detaLK"
+>
+  <h3
+    className="sc-bwzfXH gRgMOy"
+  >
+    right
+  </h3>
+  <div />
+</div>
+`;
+
+exports[`Default Popovers right 2`] = `
+<div
+  className="sc-bdVaJa byMprg"
+>
+  <h3
+    className="sc-bwzfXH gRgMOy"
+  >
+    right
+  </h3>
+  <div />
+</div>
+`;
+
+exports[`Styled Popovers 1`] = `
+<div
+  className="sc-bdVaJa byMprg"
+/>
+`;
+
+exports[`placementLeft Popovers 1`] = `<placementLeft />`;
+
+exports[`placementRight Popovers 1`] = `<placementRight />`;

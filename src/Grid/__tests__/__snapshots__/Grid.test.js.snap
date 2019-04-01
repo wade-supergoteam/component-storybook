@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Default Grid 1`] = `
+<div
+  className="sc-bdVaJa bFmFpZ"
+/>
+`;
+
+exports[`Create Default Grid with default theme 1`] = `
+<div
+  className="sc-bdVaJa bFmFpZ"
+/>
+`;
+
+exports[`Create Default Grid with default theme 2`] = `
+<div
+  className="sc-bdVaJa bFmFpZ"
+/>
+`;
+
+exports[`Create Default Grid with getGridVerticalRules 1`] = `
+<div
+  className="sc-bdVaJa bFmFpZ"
+/>
+`;
+
+exports[`Create Default Grid with getGridVerticalRules2 1`] = `
+<div
+  className="sc-bdVaJa bFmFpZ"
+/>
+`;
+
+exports[`Create Default Grid with getGridVerticalRules2 2`] = `
+<div
+  className="sc-bdVaJa bFmFpZ"
+/>
+`;
+
+exports[`Grid item 1`] = `
+<div
+  className="sc-bwzfXH kkwfdY"
+  media={
+    Object {
+      "phone": 1,
+      "tablet": 1,
+    }
+  }
+/>
+`;
+
+exports[`Grid item 2 1`] = `
+<div
+  className="sc-bwzfXH wsDrp"
+  media={
+    Object {
+      "phone": 1,
+      "tablet": 0.5,
+    }
+  }
+/>
+`;
+
+exports[`Middle Center Grid 1`] = `
+<div
+  className="sc-bdVaJa ehWsk"
+/>
+`;
