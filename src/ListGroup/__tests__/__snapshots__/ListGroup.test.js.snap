@@ -181,6 +181,70 @@ exports[`ListGroupButton active 1`] = `
 />
 `;
 
+exports[`ListGroupButton color 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.125);
+  color: #08488c;
+  background-color: #b7daff;
+  width: 100%;
+  color: #495057;
+  text-align: inherit;
+}
+
+.c0:first-child {
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.c0:focus,
+.c0:hover {
+  z-index: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  color: #212529;
+  background-color: #e9ecef;
+}
+
+.c0:focus,
+.c0:hover {
+  color: #495057;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.c0:focus,
+.c0:hover {
+  color: #08488c;
+  background-color: #9ecdff;
+}
+
+.c0.active {
+  color: #fff;
+  background-color: #08488c;
+  border-color: #08488c;
+}
+
+<li
+  className="c0"
+  color="primary"
+/>
+`;
+
 exports[`ListGroupButton disabled 1`] = `
 .c0 {
   position: relative;
