@@ -1,5 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button color=link 1`] = `
+<button
+  className="sc-bdVaJa kZsmLm"
+  color="link"
+  size="small"
+/>
+`;
+
+exports[`Button with large size and margin and enableRounded=false 1`] = `
+<button
+  className="sc-bdVaJa ckBxnm"
+  color="success"
+  size="large"
+  style={
+    Object {
+      "marginBottom": 6,
+      "marginRight": 6,
+    }
+  }
+/>
+`;
+
+exports[`Button with large size and margin and enableRounded=true 1`] = `
+<button
+  className="sc-bdVaJa feIBjB"
+  color="success"
+  size="large"
+  style={
+    Object {
+      "marginBottom": 6,
+      "marginRight": 6,
+    }
+  }
+/>
+`;
+
+exports[`Button with small size and margin 1`] = `
+<button
+  className="sc-bdVaJa lbEpoy"
+  color="success"
+  size="small"
+  style={
+    Object {
+      "marginBottom": 6,
+      "marginRight": 6,
+    }
+  }
+/>
+`;
+
+exports[`Button with small size and margin and enableRounded=false 1`] = `
+<button
+  className="sc-bdVaJa lghpNU"
+  color="success"
+  size="small"
+  style={
+    Object {
+      "marginBottom": 6,
+      "marginRight": 6,
+    }
+  }
+/>
+`;
+
 exports[`Disable rounded variant 1`] = `
 <button
   className="sc-bdVaJa hlOWJk"
@@ -10,7 +74,7 @@ exports[`Disable rounded variant 1`] = `
 
 exports[`Outline variant 1`] = `
 <button
-  className="sc-bdVaJa eCgobD"
+  className="sc-bdVaJa iKcGre"
   color="primary"
   size="normal"
 />

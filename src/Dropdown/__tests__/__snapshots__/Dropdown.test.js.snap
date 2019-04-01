@@ -1,52 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`active Dropdown 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  color: #fff!important;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #007bff!important;
+}
+
+.c0:focus,
+.c0:hover {
+  color: #16181b;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
 <a
-  className="sc-htpNat bQhpUB"
+  className="c0"
 />
 `;
 
 exports[`create dropdown 1`] = `
+.c0 {
+  position: relative;
+}
+
 <div
-  className="sc-EHOje gWqStD"
+  className="c0"
 />
 `;
 
 exports[`disabled Dropdown 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  color: #6c757d!important;
+  background-color: transparent !important;
+  background-image: none;
+}
+
+.c0:focus,
+.c0:hover {
+  color: #16181b;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
 <a
-  className="sc-htpNat kEVpvc"
+  className="c0"
   disabled={true}
 />
 `;
 
 exports[`disabled isOpen 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 .c1 {
+  display: block;
+  left: 0;
+}
+
 <div
-  className="sc-EHOje iVgnzH"
+  className="c0"
 />
 `;
 
 exports[`dropdown isOpen flase 1`] = `
+.c0 {
+  position: relative;
+}
+
 <div
-  className="sc-EHOje gWqStD"
+  className="c0"
 />
 `;
 
 exports[`dropdown with dropdownMenu left 1`] = `
+.c0 {
+  position: relative;
+}
+
 <div
-  className="sc-EHOje gWqStD"
->
-  <div
-    className="sc-bxivhb gWYWXH"
-  />
-</div>
+  className="c0"
+/>
 `;
 
 exports[`dropdown with dropdownMenu right 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 .c1 {
+  display: block;
+  right: 0;
+}
+
 <div
-  className="sc-EHOje gWqStD"
->
-  <div
-    className="sc-bxivhb gWYWXH"
-  />
-</div>
+  className="c0"
+/>
 `;

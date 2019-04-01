@@ -120,10 +120,3 @@ exports[`Large Input 1`] = `
   size="large"
 />
 `;
-
-exports[`Small Input 1`] = `
-<input
-  className="sc-bdVaJa gSgZv"
-  size="small"
-/>
-`;

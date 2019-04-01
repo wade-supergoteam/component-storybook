@@ -1,38 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Create Default Grid 1`] = `
+.c0 {
+  font-size: 0;
+  margin-left: -20px;
+}
+
+.c0 > * {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.c0 > * {
+  padding-left: 20px;
+}
+
 <div
-  className="sc-bdVaJa bFmFpZ"
+  className="c0"
 />
 `;
 
 exports[`Create Default Grid with default theme 1`] = `
-<div
-  className="sc-bdVaJa bFmFpZ"
-/>
-`;
+.c0 {
+  font-size: 0;
+  margin-left: -20px;
+}
 
-exports[`Create Default Grid with default theme 2`] = `
+.c0 > * {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.c0 > * {
+  padding-left: 20px;
+}
+
 <div
-  className="sc-bdVaJa bFmFpZ"
+  className="c0"
 />
 `;
 
 exports[`Create Default Grid with getGridVerticalRules 1`] = `
-<div
-  className="sc-bdVaJa bFmFpZ"
-/>
-`;
+.c0 {
+  font-size: 0;
+  margin-left: -20px;
+}
 
-exports[`Create Default Grid with getGridVerticalRules2 1`] = `
-<div
-  className="sc-bdVaJa bFmFpZ"
-/>
-`;
+.c0 > * {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
 
-exports[`Create Default Grid with getGridVerticalRules2 2`] = `
+.c0 > * {
+  padding-left: 20px;
+}
+
 <div
-  className="sc-bdVaJa bFmFpZ"
+  className="c0"
 />
 `;
 
@@ -63,8 +93,24 @@ exports[`Grid bottom 1`] = `
 `;
 
 exports[`Grid item 1`] = `
+.c0 {
+  width: NaN%;
+}
+
+@media (max-width:48em) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media (max-width:72.5em) and (min-width:48em) {
+  .c0 {
+    width: 100%;
+  }
+}
+
 <div
-  className="sc-bwzfXH kkwfdY"
+  className="c0"
   media={
     Object {
       "phone": 1,
@@ -75,8 +121,24 @@ exports[`Grid item 1`] = `
 `;
 
 exports[`Grid item 2 1`] = `
+.c0 {
+  width: 25%;
+}
+
+@media (max-width:48em) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media (max-width:72.5em) and (min-width:48em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
 <div
-  className="sc-bwzfXH wsDrp"
+  className="c0"
   media={
     Object {
       "phone": 1,
@@ -88,7 +150,7 @@ exports[`Grid item 2 1`] = `
 
 exports[`Grid item debug 1`] = `
 .c0 {
-  background-color: rgba(192,192,192,0.34711959471982534);
+  background-color: rgba(192,192,192,0.6664250216017082);
   width: NaN%;
 }
 
@@ -127,7 +189,28 @@ exports[`Grid with props 1`] = `
 `;
 
 exports[`Middle Center Grid 1`] = `
+.c0 {
+  font-size: 0;
+  margin-left: -20px;
+  text-align: center;
+}
+
+.c0 > * {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.c0 > * {
+  padding-left: 20px;
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
 <div
-  className="sc-bdVaJa ehWsk"
+  className="c0"
 />
 `;
