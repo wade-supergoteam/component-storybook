@@ -3,7 +3,17 @@ import { boolean, withKnobs } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import React, { Fragment } from "react";
 import { host } from "storybook-host";
+import styled from "styled-components";
 import { Grid, GridItem } from "../Grid";
+
+const Input = styled.input`
+  width: 100%;
+  border-radius: 5px;
+  padding: 0;
+  margin: 3px 0 3px 0;
+  border: none;
+  background-color: whitesmoke;
+`;
 
 const debugDefault: boolean = true;
 
@@ -62,6 +72,39 @@ export default storiesOf("Grids", module)
         </GridItem>
         <GridItem media={{ phone: 1, tablet: 1 }} col={1 / 2} debug={boolean("Debug", debugDefault)}>
           <p>Item 4</p>
+        </GridItem>
+      </Grid>
+    </Fragment>
+  ))
+  .add("Registration Form", () => (
+    <Fragment>
+      <Grid middle gutter={5} style={{ width: 380, "background-color": "#17A2B8", "padding-right": "5px" }}>
+        <GridItem col={1 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Title*" />
+        </GridItem>
+        <GridItem col={5 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="First name*" />
+        </GridItem>
+        <GridItem col={1} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Last name*" />
+        </GridItem>
+        <GridItem col={1} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Email*" />
+        </GridItem>
+        <GridItem col={1 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="+44*" />
+        </GridItem>
+        <GridItem col={5 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Phone number*" />
+        </GridItem>
+        <GridItem col={2 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Postcode*" />
+        </GridItem>
+        <GridItem col={2 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Postcode*" />
+        </GridItem>
+        <GridItem col={2 / 6} debug={boolean("Debug", debugDefault)}>
+          <Input placeholder="Find my address*" />
         </GridItem>
       </Grid>
     </Fragment>
