@@ -1,29 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Collapse with status entered 1`] = `
+.c0 {
+  display: block;
+}
+
 <div
-  className="sc-bdVaJa gtywye"
+  className="c0"
   style={Object {}}
 />
 `;
 
 exports[`Collapse with status exited 1`] = `
+.c0 {
+  display: none;
+}
+
 <div
-  className="sc-bdVaJa bkyCUw"
+  className="c0"
   style={Object {}}
 />
 `;
 
 exports[`Collapse with status exiting 1`] = `
+.c0 {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
 <div
-  className="sc-bdVaJa hBMUMD"
+  className="c0"
   style={Object {}}
 />
 `;
 
 exports[`it works 1`] = `
+.c0 {
+  display: none;
+}
+
 <div
-  className="sc-bdVaJa bkyCUw"
+  className="c0"
   style={Object {}}
 />
 `;

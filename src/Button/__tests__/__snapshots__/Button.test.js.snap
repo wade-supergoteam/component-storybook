@@ -2,7 +2,7 @@
 
 exports[`Button color=link 1`] = `
 <button
-  className="sc-bdVaJa kZsmLm"
+  className="sc-bdVaJa htUrVg"
   color="link"
   size="small"
 />
@@ -10,7 +10,7 @@ exports[`Button color=link 1`] = `
 
 exports[`Button with large size and margin and enableRounded=false 1`] = `
 <button
-  className="sc-bdVaJa ckBxnm"
+  className="sc-bdVaJa hYGeor"
   color="success"
   size="large"
   style={
@@ -24,7 +24,7 @@ exports[`Button with large size and margin and enableRounded=false 1`] = `
 
 exports[`Button with large size and margin and enableRounded=true 1`] = `
 <button
-  className="sc-bdVaJa feIBjB"
+  className="sc-bdVaJa jowoqV"
   color="success"
   size="large"
   style={
@@ -38,7 +38,7 @@ exports[`Button with large size and margin and enableRounded=true 1`] = `
 
 exports[`Button with small size and margin 1`] = `
 <button
-  className="sc-bdVaJa lbEpoy"
+  className="sc-bdVaJa bQCpom"
   color="success"
   size="small"
   style={
@@ -52,7 +52,7 @@ exports[`Button with small size and margin 1`] = `
 
 exports[`Button with small size and margin and enableRounded=false 1`] = `
 <button
-  className="sc-bdVaJa lghpNU"
+  className="sc-bdVaJa fpTczy"
   color="success"
   size="small"
   style={
@@ -66,7 +66,7 @@ exports[`Button with small size and margin and enableRounded=false 1`] = `
 
 exports[`Disable rounded variant 1`] = `
 <button
-  className="sc-bdVaJa hlOWJk"
+  className="sc-bdVaJa jDeDyb"
   color="primary"
   size="normal"
 />
@@ -74,7 +74,7 @@ exports[`Disable rounded variant 1`] = `
 
 exports[`Outline variant 1`] = `
 <button
-  className="sc-bdVaJa iKcGre"
+  className="sc-bdVaJa jYzkum"
   color="primary"
   size="normal"
 />
@@ -82,7 +82,7 @@ exports[`Outline variant 1`] = `
 
 exports[`Rounded variant 1`] = `
 <button
-  className="sc-bdVaJa eCgobD"
+  className="sc-bdVaJa ldqfJP"
   color="primary"
   size="normal"
 />
@@ -90,7 +90,7 @@ exports[`Rounded variant 1`] = `
 
 exports[`it works 1`] = `
 <button
-  className="sc-bdVaJa zXMdD"
+  className="sc-bdVaJa izFiew"
   color="primary"
   size="normal"
 />

@@ -18,7 +18,7 @@ exports[`Create DismissableAlert 1`] = `
   />
   <button
     aria-label="Close"
-    className="sc-htpNat bKWPFO sc-bwzfXH iFILon"
+    className="sc-htpNat bKWPFO sc-bwzfXH jIAAnj"
     onClick={undefined}
   >
     <span
@@ -41,7 +41,7 @@ exports[`Create DismissableAlert with onClose 1`] = `
   />
   <button
     aria-label="Close"
-    className="sc-htpNat bKWPFO sc-bwzfXH iFILon"
+    className="sc-htpNat bKWPFO sc-bwzfXH jIAAnj"
     onClick={[Function]}
   >
     <span

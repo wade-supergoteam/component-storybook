@@ -8,7 +8,7 @@ test("it works", () => {
 });
 
 test("Outline variant", () => {
-  const wrapper = renderer.create(<Button outline block  color="primary"/>);
+  const wrapper = renderer.create(<Button outline block color="primary" />);
   expect(wrapper).toMatchSnapshot();
 });
 
@@ -26,26 +26,26 @@ test("Disable rounded variant", () => {
 const margin = { marginRight: 6, marginBottom: 6 };
 
 test("Button with small size and margin", () => {
-    const wrapper = renderer.create(<Button style={margin} color="success" size="small" theme={{ enableRounded: true }} active />);
-    expect(wrapper).toMatchSnapshot();
+  const wrapper = renderer.create(<Button style={margin} color="success" size="small" theme={{ enableRounded: true }} active />);
+  expect(wrapper).toMatchSnapshot();
 });
 
 test("Button with large size and margin and enableRounded=true", () => {
-    const wrapper = renderer.create(<Button style={margin} color="success" size="large" theme={{ enableRounded: true }} />);
-    expect(wrapper).toMatchSnapshot();
+  const wrapper = renderer.create(<Button style={margin} color="success" size="large" theme={{ enableRounded: true }} />);
+  expect(wrapper).toMatchSnapshot();
 });
 
 test("Button with large size and margin and enableRounded=false", () => {
-    const wrapper = renderer.create(<Button style={margin} color="success" size="large" theme={{ enableRounded: false }} />);
-    expect(wrapper).toMatchSnapshot();
+  const wrapper = renderer.create(<Button style={margin} color="success" size="large" theme={{ enableRounded: false }} />);
+  expect(wrapper).toMatchSnapshot();
 });
 
 test("Button with small size and margin and enableRounded=false", () => {
-    const wrapper = renderer.create(<Button style={margin} color="success" size="small" theme={{ enableRounded: false }} />);
-    expect(wrapper).toMatchSnapshot();
+  const wrapper = renderer.create(<Button style={margin} color="success" size="small" theme={{ enableRounded: false }} />);
+  expect(wrapper).toMatchSnapshot();
 });
 
 test("Button color=link", () => {
-    const wrapper = renderer.create(<Button color="link" size="small" theme={{ enableRounded: false }} />);
-    expect(wrapper).toMatchSnapshot();
+  const wrapper = renderer.create(<Button color="link" size="small" theme={{ enableRounded: false }} />);
+  expect(wrapper).toMatchSnapshot();
 });

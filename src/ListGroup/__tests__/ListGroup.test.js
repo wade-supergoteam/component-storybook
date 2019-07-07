@@ -7,7 +7,6 @@ import ListGroupItem from "../ListGroupItem";
 import ListGroupLink from "../ListGroupLink";
 import { themeColorLevel } from "../../utils/color-functions";
 
-
 test("Basic Example", () => {
   const wrapper = renderer.create(<ListGroup />);
   expect(wrapper).toMatchSnapshot();
@@ -24,15 +23,14 @@ test("ListGroupButton disabled", () => {
 });
 
 test("ListGroupButton color", () => {
-    const wrapper = renderer.create(<ListGroupButton color="primary" />);
-    expect(wrapper).toMatchSnapshot();
+  const wrapper = renderer.create(<ListGroupButton color="primary" />);
+  expect(wrapper).toMatchSnapshot();
 });
 
 test("ListGroupButton", () => {
-    const wrapper = renderer.create(<ListGroupButton />).toJSON();
-    expect(wrapper).toHaveStyleRule("color", "#495057");
-    expect(wrapper).toHaveStyleRule("background-color", "#fff");
-
+  const wrapper = renderer.create(<ListGroupButton />).toJSON();
+  expect(wrapper).toHaveStyleRule("color", "#495057");
+  expect(wrapper).toHaveStyleRule("background-color", "#fff");
 });
 
 test("Flush List group", () => {

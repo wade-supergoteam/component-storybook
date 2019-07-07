@@ -92,32 +92,6 @@ exports[`Grid bottom 1`] = `
 />
 `;
 
-exports[`Grid bottom 1`] = `
-.c0 {
-  font-size: 0;
-  margin-left: -20px;
-}
-
-.c0 > * {
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-}
-
-.c0 > * {
-  padding-left: 20px;
-}
-
-.c0 > * {
-  vertical-align: bottom;
-}
-
-<div
-  className="c0"
-/>
-`;
-
 exports[`Grid item 1`] = `
 .c0 {
   width: NaN%;
@@ -171,17 +145,6 @@ exports[`Grid item 2 1`] = `
       "tablet": 0.5,
     }
   }
-/>
-`;
-
-exports[`Grid item debug 1`] = `
-.c0 {
-  background-color: rgba(192,192,192,0.17775145431929396);
-  width: NaN%;
-}
-
-<div
-  className="c0"
 />
 `;
 

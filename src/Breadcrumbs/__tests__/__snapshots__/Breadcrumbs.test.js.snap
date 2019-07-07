@@ -9,12 +9,6 @@ exports[`Breadcrums is created 1`] = `
 exports[`Breadcrums item 1`] = `
 <li
   aria-current="page"
-  className="sc-bwzfXH hhqCxF"
-/>
-`;
-
-exports[`breadcrums is created 1`] = `
-<ol
-  className="sc-bdVaJa flmxlQ"
+  className="sc-bwzfXH hcnbnD"
 />
 `;

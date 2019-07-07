@@ -48,7 +48,7 @@ const Button = styled.button`
   ${transition(themeProp("btnTransition", btnTransition))};
 
   /* Share hover and focus styles */
-  ${hoverFocus("text-decoration: none;")};
+  ${hoverFocus("text-decoration: none;")}
 
   &:focus,
   &.focus {
