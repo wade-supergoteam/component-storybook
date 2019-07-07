@@ -23,9 +23,9 @@ const Breadcrumb = styled.ol`
   ${borderRadius(themeProp("bordeRadius", ".25rem"))};
 `;
 
-Breadcrumb.Item = styled.li.attrs({
-  "aria-current": props => props.active && "page",
-})`
+Breadcrumb.Item = styled.li.attrs(props => ({
+  "aria-current": props.active && "page",
+}))`
   :not(:first-child)::before {
     display: inline-block;
     padding-right: ${themeProp("breadcrumbItemPadding", breadcrumbItemPadding)};
