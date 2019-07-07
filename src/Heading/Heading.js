@@ -7,7 +7,7 @@ import * as defaultTheme from "./default-theme";
 
 const { headingsMarginBottom, headingsFontFamily, headingsFontWeight, headingsLineHeight, headingsColor } = defaultTheme;
 
-const Heading = styled(Element)`
+const Heading = styled.div`
   margin-bottom: ${themeProp("headingsMarginBottom", headingsMarginBottom)};
   font-family: ${themeProp("headingsFontFamily", headingsFontFamily)};
 
