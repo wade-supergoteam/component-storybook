@@ -5,7 +5,7 @@ exports[`With custom theme 1`] = `null`;
 exports[`create default close icon 1`] = `
 <button
   aria-label="Close"
-  className="sc-bdVaJa hOsLfu"
+  className="sc-bdVaJa uNJFa"
 >
   <span
     aria-hidden="true"

@@ -12,6 +12,12 @@ exports[`Card with Header 2`] = `
 />
 `;
 
+exports[`Card with Header 2`] = `
+<div
+  className="sc-htpNat fDAeZq"
+/>
+`;
+
 exports[`With Image 1`] = `
 <img
   className="sc-ifAKCX iSwMuJ"

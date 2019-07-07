@@ -37,21 +37,21 @@ exports[`Create Input Field 1`] = `
 
 exports[`Create Large Select 1`] = `
 <input
-  className="sc-bdVaJa sc-bwzfXH fvRpLT"
+  className="sc-bdVaJa sc-bwzfXH glnWMt"
   size="large"
 />
 `;
 
 exports[`Create Select 1`] = `
 <input
-  className="sc-bdVaJa sc-bwzfXH eFaDfp"
+  className="sc-bdVaJa sc-bwzfXH dCzVIK"
   size={[Function]}
 />
 `;
 
 exports[`Create Small Select 1`] = `
 <input
-  className="sc-bdVaJa sc-bwzfXH jImCgD"
+  className="sc-bdVaJa sc-bwzfXH kzTRqo"
   size="small"
 />
 `;

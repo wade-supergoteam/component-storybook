@@ -12,3 +12,9 @@ exports[`Breadcrums item 1`] = `
   className="sc-bwzfXH hhqCxF"
 />
 `;
+
+exports[`breadcrums is created 1`] = `
+<ol
+  className="sc-bdVaJa flmxlQ"
+/>
+`;
