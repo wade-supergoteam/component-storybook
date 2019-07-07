@@ -1,13 +1,13 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
+import Pagination from "..";
 import PaginationItem from "../PaginationItem";
-import Pagination from "../";
 
 test("Default Pagination", () => {
   const wrapper = renderer.create(<Pagination />);
   expect(wrapper).toMatchSnapshot();
 });
-
 test("Pagination large", () => {
   const wrapper = renderer.create(<Pagination size="large" />);
   expect(wrapper).toMatchSnapshot();

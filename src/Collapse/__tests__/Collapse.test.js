@@ -1,8 +1,7 @@
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import { configure, shallow, render, mount } from "enzyme";
-import Collapse from "../";
+import Collapse from "..";
 
 const props = { node: 10 };
 

@@ -1,11 +1,10 @@
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import ListGroup from "../";
+import ListGroup from "..";
 import ListGroupButton from "../ListGroupButton";
 import ListGroupItem from "../ListGroupItem";
 import ListGroupLink from "../ListGroupLink";
-import { themeColorLevel } from "../../utils/color-functions";
 
 test("Basic Example", () => {
   const wrapper = renderer.create(<ListGroup />);
@@ -32,7 +31,6 @@ test("ListGroupButton", () => {
   expect(wrapper).toHaveStyleRule("color", "#495057");
   expect(wrapper).toHaveStyleRule("background-color", "#fff");
 });
-
 test("Flush List group", () => {
   const wrapper = renderer.create(<ListGroup flush />);
   expect(wrapper).toMatchSnapshot();

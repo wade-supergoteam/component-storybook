@@ -1,9 +1,8 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import "jest-styled-components";
-import Dropdown from "../";
+import Dropdown from "..";
 import DropdownItem from "../DropdownItem";
-import DropdownMenu from "../DropdownMenu";
 
 test("create dropdown", () => {
   const wrapper = renderer.create(<Dropdown />);
@@ -11,7 +10,7 @@ test("create dropdown", () => {
 });
 
 test("disabled isOpen", () => {
-  const wrapper = renderer.create(<Dropdown isOpen={true} />);
+  const wrapper = renderer.create(<Dropdown isOpen />);
   expect(wrapper).toMatchSnapshot();
 });
 
@@ -26,7 +25,7 @@ test("dropdown with dropdownMenu left", () => {
 });
 
 test("dropdown with dropdownMenu right", () => {
-  const wrapper = renderer.create(<Dropdown isOpen={true} align="right" />);
+  const wrapper = renderer.create(<Dropdown isOpen align="right" />);
   expect(wrapper).toMatchSnapshot();
   // const wrapper = renderer.create(<Dropdown><DropdownMenu /></Dropdown>).toJSON()
   // expect(wrapper).toHaveStyleRule('align', 'right');

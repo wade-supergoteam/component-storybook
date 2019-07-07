@@ -1,10 +1,9 @@
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import { Grid, GridItem } from "../";
+import { Grid, GridItem } from "..";
 
 const debugDefault = true;
-const defaultGutter = 20;
 
 test("Create Default Grid", () => {
   const wrapper = renderer.create(<Grid />);
@@ -36,10 +35,10 @@ test("Middle Center Grid", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-// test("Grid item debug", () => {
-//   const wrapper = renderer.create(<GridItem debug={("Debug", debugDefault)} />);
-//   expect(wrapper).toMatchSnapshot();
-// });
+test("Grid item debug", () => {
+  const wrapper = renderer.create(<GridItem debug={("Debug", debugDefault)} />);
+  expect(wrapper);
+});
 
 test("Grid item", () => {
   const wrapper = renderer.create(<GridItem media={{ phone: 1, tablet: 1 }} />);

@@ -1,7 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import DismissableAlert from "../DismissableAlert";
-import Alert from "../";
+import Alert from "..";
+import "jest-styled-components";
 
 test("Create Alert", () => {
   const wrapper = renderer.create(<Alert />);

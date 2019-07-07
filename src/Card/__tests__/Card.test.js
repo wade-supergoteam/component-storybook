@@ -1,7 +1,7 @@
 import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import Card from "../";
+import Card from "..";
 import CardImage from "../CardImage";
 
 test("create card", () => {

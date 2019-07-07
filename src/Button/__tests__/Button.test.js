@@ -1,12 +1,12 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import Button from "../";
+import Button from "..";
 
 test("it works", () => {
   const wrapper = renderer.create(<Button />);
   expect(wrapper).toMatchSnapshot();
 });
-
 test("Outline variant", () => {
   const wrapper = renderer.create(<Button outline block color="primary" />);
   expect(wrapper).toMatchSnapshot();

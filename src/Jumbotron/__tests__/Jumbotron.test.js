@@ -1,6 +1,7 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import Jumbotron from "../";
+import Jumbotron from "..";
 
 test("Create Default", () => {
   const wrapper = renderer.create(<Jumbotron />);

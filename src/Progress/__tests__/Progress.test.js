@@ -1,6 +1,7 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import Progress from "../";
+import Progress from "..";
 
 test("Basic Progress", () => {
   const wrapper = renderer.create(<Progress />);
