@@ -46,8 +46,7 @@ import {
 const Input = styled.input`
   display: block;
   width: 100%;
-  padding: ${themeProp("inputPaddingY", inputPaddingY)}
-    ${themeProp("inputPaddingX", inputPaddingX)};
+  padding: ${themeProp("inputPaddingY", inputPaddingY)} ${themeProp("inputPaddingX", inputPaddingX)};
   font-size: ${themeProp("fontSizeBase", fontSizeBase)};
   line-height: ${themeProp("inputLineHeight", inputLineHeight)};
   color: ${themeProp("inputColor", inputColor)};
@@ -109,8 +108,7 @@ const Input = styled.input`
       padding: ${themeProp("inputPaddingYsm", inputPaddingYsm)} ${themeProp("inputPaddingXsm", inputPaddingXsm)};
       font-size: ${themeProp("fontSizeSm", fontSizeSm)};
       line-height: ${themeProp("inputLineHeightSm", inputLineHeightSm)};
-      ${(typeof theme.enableRounded === "undefined" || theme.enableRounded) &&
-        borderRadius(themeProp("inputBorderRadiusSm", inputBorderRadiusSm))};
+      ${typeof theme.enableRounded === "undefined" && borderRadius(themeProp("inputBorderRadiusSm", inputBorderRadiusSm))};
     `}
 
   ${({ size, theme }) =>
@@ -119,8 +117,7 @@ const Input = styled.input`
       padding: ${themeProp("inputPaddingYlg", inputPaddingYlg)} ${themeProp("inputPaddingXlg", inputPaddingXlg)};
       font-size: ${themeProp("fontSizeLg", fontSizeLg)};
       line-height: ${themeProp("inputLineHeightLg", inputLineHeightLg)};
-      ${(typeof theme.enableRounded === "undefined" || theme.enableRounded) &&
-        borderRadius(themeProp("inputBorderRadiusLg", inputBorderRadiusLg))};
+      ${typeof theme.enableRounded === "undefined" && borderRadius(themeProp("inputBorderRadiusLg", inputBorderRadiusLg))};
     `};
 `;
 

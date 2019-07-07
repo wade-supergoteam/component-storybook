@@ -1,15 +1,11 @@
-import * as theme from "./defaultTheme";
-
-import { colorYiq, themeColorLevel } from "./color-functions";
-
-import { borderRadius, borderTopRadius, borderRightRadius, borderBottomRadius, borderLeftRadius } from "./border-radius";
-
-import { hover, hoverFocus, plainHoverFocus, hoverFocusActive } from "./hover";
-
-import { sassRgba } from "./sassRgba";
+import { borderBottomRadius, borderLeftRadius, borderRadius, borderRightRadius, borderTopRadius } from "./border-radius";
 import { boxShadow } from "./box-shadow";
-import { transition } from "./transition";
+import { colorYiq, themeColorLevel } from "./color-functions";
+import * as theme from "./defaultTheme";
 import { gradientStriped } from "./gradients";
+import { hover, hoverFocus, hoverFocusActive, plainHoverFocus } from "./hover";
+import { sassRgba } from "./sassRgba";
+import { transition } from "./transition";
 
 export default {
   theme,

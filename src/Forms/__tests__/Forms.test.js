@@ -1,11 +1,8 @@
+import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
-import Forms from "../";
-import CustomSelect from "../CustomSelect";
-import Input from "../Input";
-import Select from "../Select";
-import Textarea from "../Textarea";
 import { ThemeProvider } from "styled-components";
+import { CustomSelect, Input, Select, Textarea, FormGroup } from "..";
 
 const customInputTheme = {
   enableRounded: false,
@@ -19,11 +16,15 @@ test("Custom Select", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
+test("Form Group", () => {
+  const wrapper = renderer.create(<FormGroup />);
+  expect(wrapper).toMatchSnapshot();
+});
+
 test("Create Input Field", () => {
   const wrapper = renderer.create(<Input />);
   expect(wrapper).toMatchSnapshot();
 });
-
 test("Input Field disabled", () => {
   const wrapper = renderer.create(<Input disabled />);
   expect(wrapper).toMatchSnapshot();
@@ -44,6 +45,10 @@ test("Custom Input", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
+test("Custom Input rounded", () => {
+  const wrapper = renderer.create(<Input size="small" theme={{}} />);
+  expect(wrapper).toMatchSnapshot();
+});
 test("Input with enableRounded", () => {
   const wrapper = renderer.create(<Input theme={{ enableRounded: true }} />);
   expect(wrapper).toMatchSnapshot();

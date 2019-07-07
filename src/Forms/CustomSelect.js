@@ -1,51 +1,44 @@
 // @flow
 
-import PropTypes from "prop-types";
-
 // $FlowIssue
 import get from "lodash.get";
-
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import themeProp from "../utils/theme";
-
 import {
-  customSelectHeight,
-  customSelectPaddingY,
-  customSelectPaddingX,
-  // customSelectIndicatorPadding,
-  customSelectLineHeight,
   customSelectBg,
   customSelectBgSize,
-  customSelectBorderWidth,
-  customSelectFocusBorderColor,
-  customSelectFocusBoxShadow,
-  inputColor,
-  inputBg,
-  customSelectDisabledColor,
-  customSelectDisabledBg,
-  customSelectColor,
-  customSelectIndicator,
   customSelectBorderColor,
   customSelectBorderRadius,
-  customSelectHeightSm,
-  customSelectFontSizeSm,
-  customSelectHeightLg,
+  customSelectBorderWidth,
+  customSelectColor,
+  customSelectDisabledBg,
+  customSelectDisabledColor,
+  customSelectFocusBorderColor,
+  customSelectFocusBoxShadow,
   customSelectFontSizeLg,
+  customSelectFontSizeSm,
+  customSelectHeight,
+  customSelectHeightLg,
+  customSelectHeightSm,
+  customSelectIndicator,
+  customSelectLineHeight,
+  customSelectPaddingX,
+  customSelectPaddingY,
+  inputBg,
+  inputColor,
 } from "./default-theme";
 
 const CustomSelect = styled.select`
   display: inline-block;
   width: 100%;
-  /* height: ${themeProp("customSelectHeight", customSelectHeight)}; */
   padding: ${themeProp("customSelectPaddingY", customSelectPaddingY)} 1.75rem
-    ${themeProp("customSelectPaddingY", customSelectPaddingY)}
-    ${themeProp("customSelectPaddingX", customSelectPaddingX)};
+    ${themeProp("customSelectPaddingY", customSelectPaddingY)} ${themeProp("customSelectPaddingX", customSelectPaddingX)};
   line-height: ${themeProp("customSelectLineHeight", customSelectLineHeight)};
   color: ${themeProp("customSelectColor", customSelectColor)};
   vertical-align: middle;
-  background: ${themeProp("customSelectBg", customSelectBg)}
-    ${themeProp("customSelectIndicator", customSelectIndicator)} no-repeat right
-    ${themeProp("customSelectPaddingX", customSelectPaddingX)} center;
+  background: ${themeProp("customSelectBg", customSelectBg)} ${themeProp("customSelectIndicator", customSelectIndicator)}
+    no-repeat right ${themeProp("customSelectPaddingX", customSelectPaddingX)} center;
   background-size: ${themeProp("customSelectBgSize", customSelectBgSize)};
   border: ${themeProp("customSelectBorderWidth", customSelectBorderWidth)} solid
     ${themeProp("customSelectBorderColor", customSelectBorderColor)};
@@ -64,12 +57,12 @@ const CustomSelect = styled.select`
 
     &::-ms-value {
       color: ${themeProp("inputColor", inputColor)};
-      backgroundcolor: ${themeProp("inputBg", inputBg)};
+      background-color: ${themeProp("inputBg", inputBg)};
     }
   }
 
   &[multiple],
-  &[size]:not([size='1']) {
+  &[size]:not([size="1"]) {
     height: auto;
     padding-right: ${themeProp("customSelectPaddingX", customSelectPaddingX)};
     background-image: none;
