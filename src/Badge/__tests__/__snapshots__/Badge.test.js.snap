@@ -1,22 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link Badges 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.c0:empty {
+  display: none;
+}
+
+.c0[href]:hover {
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #0062cc;
+}
+
 <span
-  className="sc-bdVaJa crIvqj"
+  className="c0"
   color="primary"
 />
 `;
 
 exports[`Pill Badges 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #007bff;
+  padding-right: .6em;
+  padding-left: .6em;
+  border-radius: 10rem;
+}
+
+.c0:empty {
+  display: none;
+}
+
+.c0[href]:hover {
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #0062cc;
+}
+
 <span
-  className="sc-bdVaJa buvDej"
+  className="c0"
   color="primary"
 />
 `;
 
 exports[`it works 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.c0:empty {
+  display: none;
+}
+
+.c0[href]:hover {
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #0062cc;
+}
+
 <span
-  className="sc-bdVaJa crIvqj"
+  className="c0"
   color="primary"
 />
 `;

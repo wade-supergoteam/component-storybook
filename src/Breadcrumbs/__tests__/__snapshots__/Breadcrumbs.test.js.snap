@@ -1,14 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrums is created 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #e9ecef;
+  border-radius: .25rem;
+}
+
 <ol
-  className="sc-bdVaJa flmxlQ"
+  className="c0"
 />
 `;
 
 exports[`Breadcrums item 1`] = `
+.c1 {
+  color: (props = {}) =>(0,_lodash2.default)(props.theme,path,defaultValue);
+}
+
+.c1:not(:first-child)::before {
+  display: inline-block;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: #6c757d;
+  content: "/";
+}
+
+.c1:not(:first-child).c0:hover::before {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1:not(:first-child).c0:hover::before {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <li
   aria-current="page"
-  className="sc-bwzfXH hcnbnD"
+  className="c0 c1"
 />
 `;

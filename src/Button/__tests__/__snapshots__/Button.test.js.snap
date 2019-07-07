@@ -1,16 +1,146 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button color=link 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: normal;
+  color: #007bff;
+  background-color: transparent;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #0056b3;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.c0:focus,
+.c0.focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.c0:disabled,
+.c0.disabled {
+  color: text-decoration:#6c757d;
+}
+
 <button
-  className="sc-bdVaJa htUrVg"
+  className="c0"
   color="link"
   size="small"
 />
 `;
 
 exports[`Button with large size and margin and enableRounded=false 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(40,167,69,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #1e7e34;
+  background-image: none;
+  border-color: #1c7430;
+}
+
 <button
-  className="sc-bdVaJa hYGeor"
+  className="c0"
   color="success"
   size="large"
   style={
@@ -23,8 +153,75 @@ exports[`Button with large size and margin and enableRounded=false 1`] = `
 `;
 
 exports[`Button with large size and margin and enableRounded=true 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(40,167,69,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #1e7e34;
+  background-image: none;
+  border-color: #1c7430;
+}
+
 <button
-  className="sc-bdVaJa jowoqV"
+  className="c0"
   color="success"
   size="large"
   style={
@@ -37,8 +234,76 @@ exports[`Button with large size and margin and enableRounded=true 1`] = `
 `;
 
 exports[`Button with small size and margin 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  background-image: none;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(40,167,69,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #1e7e34;
+  background-image: none;
+  border-color: #1c7430;
+}
+
 <button
-  className="sc-bdVaJa bQCpom"
+  className="c0"
   color="success"
   size="small"
   style={
@@ -51,8 +316,75 @@ exports[`Button with small size and margin 1`] = `
 `;
 
 exports[`Button with small size and margin and enableRounded=false 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(40,167,69,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #1e7e34;
+  background-image: none;
+  border-color: #1c7430;
+}
+
 <button
-  className="sc-bdVaJa fpTczy"
+  className="c0"
   color="success"
   size="small"
   style={
@@ -65,32 +397,388 @@ exports[`Button with small size and margin and enableRounded=false 1`] = `
 `;
 
 exports[`Disable rounded variant 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #0062cc;
+  background-image: none;
+  border-color: #005cbf;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
 <button
-  className="sc-bdVaJa jDeDyb"
+  className="c0"
   color="primary"
   size="normal"
 />
 `;
 
 exports[`Outline variant 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #0062cc;
+  background-image: none;
+  border-color: #005cbf;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
 <button
-  className="sc-bdVaJa jYzkum"
+  className="c0"
   color="primary"
   size="normal"
 />
 `;
 
 exports[`Rounded variant 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #0062cc;
+  background-image: none;
+  border-color: #005cbf;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
 <button
-  className="sc-bdVaJa ldqfJP"
+  className="c0"
   color="primary"
   size="normal"
 />
 `;
 
 exports[`it works 1`] = `
+.c0 {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.c0:focus,
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0.focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+}
+
+.c0.disabled,
+.c0:disabled {
+  opacity: .65;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.c0:focus,
+.c0.focus {
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+.c0.disabled,
+.c0:disabled {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.c0:active,
+.c0.active,
+.show > .c0.dropdown-toggle {
+  background-color: #0062cc;
+  background-image: none;
+  border-color: #005cbf;
+}
+
 <button
-  className="sc-bdVaJa izFiew"
+  className="c0"
   color="primary"
   size="normal"
 />

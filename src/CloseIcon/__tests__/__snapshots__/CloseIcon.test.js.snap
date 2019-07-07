@@ -3,9 +3,34 @@
 exports[`With custom theme 1`] = `null`;
 
 exports[`create default close icon 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.c0:focus,
+.c0:hover {
+  color: (props = {}) =>(0,_lodash2.default)(props.theme,path,defaultValue);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  opacity: .75;
+}
+
+.c0:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
 <button
   aria-label="Close"
-  className="sc-bdVaJa eimErA"
+  className="c0"
 >
   <span
     aria-hidden="true"
