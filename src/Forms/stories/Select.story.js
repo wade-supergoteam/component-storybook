@@ -15,7 +15,6 @@ export default storiesOf("Forms", module)
   )
   .add("Select", () => (
     <Fragment>
-      <label htmlFor="exampleSelect1">Select input</label>
       <Select
         id="exampleSelect1"
         size={select(
@@ -27,12 +26,6 @@ export default storiesOf("Forms", module)
           },
           "normal",
         )}
-      >
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </Select>
+      />
     </Fragment>
   ));
