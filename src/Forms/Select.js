@@ -1,31 +1,23 @@
-// @flow
-import styled from "styled-components";
+import React, { Component } from 'react'
+import Select from 'react-select'
+import makeAnimated from 'react-select/animated';
 
-import themeProp from "../utils/theme";
+const animatedComponents = makeAnimated();
 
-import Input from "./Input";
+const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+]
 
-import { inputColor, inputBg, inputHeight, inputHeightSm, inputHeightLg } from "./default-theme";
-
-// TODO: it has a .extend before
-const Select = styled(Input)`
-  &:not([size]):not([multiple]) {
-    ${props => {
-      switch (props.size) {
-        case "small":
-          return `height: ${themeProp("inputHeight", inputHeightSm)};`;
-        case "large":
-          return `height: ${themeProp("inputHeight", inputHeightLg)};`;
-        default:
-          return `height: ${themeProp("inputHeight", inputHeight)};`;
-      }
-    }};
-  }
-
-  &:focus::-ms-value {
-    color: ${themeProp("inputColor", inputColor)};
-    background-color: ${themeProp("inputBg", inputBg)};
-  }
-`;
-
-export default Select;
+export default function AnimatedMulti() {
+    return (
+        <Select
+            closeMenuOnSelect={false}
+            defaultValue={options[0]}
+            components={animatedComponents}
+            isMulti
+            options={options}
+        />
+    );
+}

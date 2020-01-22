@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { host } from "storybook-host";
 import { withKnobs, select } from "@storybook/addon-knobs/react";
 
-import Select from "../Select";
+import AnimatedMulti from "../Select";
 
 export default storiesOf("Forms", module)
   .addDecorator(withKnobs)
@@ -15,17 +15,6 @@ export default storiesOf("Forms", module)
   )
   .add("Select", () => (
     <Fragment>
-      <Select
-        id="exampleSelect1"
-        size={select(
-          "Size",
-          {
-            normal: "Normal",
-            small: "Small",
-            large: "Large",
-          },
-          "normal",
-        )}
-      />
+      <AnimatedMulti />
     </Fragment>
   ));
