@@ -2,22 +2,14 @@ import React, { Component } from 'react'
 import ReactSelect from 'react-select'
 import PropTypes from "prop-types"
 import makeAnimated from 'react-select/animated'
-import styled from "styled-components"
 
 const animatedComponents = makeAnimated();
 
-const Select = styled(ReactSelect)`  
-  ${({ closeMenuOnSelect, name }) => {
-    switch (closeMenuOnSelect) {
-        case "true":
-            return 'closeMenuOnSelect=true';
-        case "false":
-            return 'closeMenuOnSelect=false';
-    }
-    }};
-    
+const Select = () => {
+  return (
+    <ReactSelect />  
+  );
 };
-`;
 
 Select.defaultProps = {
     closeMenuOnSelect: false,
