@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Select from 'react-select'
+import ReactSelect from 'react-select'
 import PropTypes from "prop-types"
 import makeAnimated from 'react-select/animated'
 import styled from "styled-components"
 
 const animatedComponents = makeAnimated();
 
-const MultiSelect = styled(Select)`  
+const Select = styled(ReactSelect)`  
   ${({ closeMenuOnSelect, name }) => {
     switch (closeMenuOnSelect) {
         case "true":
@@ -19,17 +19,17 @@ const MultiSelect = styled(Select)`
 };
 `;
 
-MultiSelect.defaultProps = {
+Select.defaultProps = {
     closeMenuOnSelect: false,
     components: animatedComponents,
     name: "color"
 };
 
-MultiSelect.propTypes = {
+Select.propTypes = {
     closeMenuOnSelect: PropTypes.oneOf(["true", "false"]),
     options: PropTypes.object,
     isMulti: PropTypes.boolean,
     name: PropTypes.any
 
 };
-export default MultiSelect;
+export default Select;
