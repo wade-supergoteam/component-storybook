@@ -3,7 +3,13 @@ import { storiesOf } from "@storybook/react";
 import { host } from "storybook-host";
 import { withKnobs, select } from "@storybook/addon-knobs/react";
 
-import AnimatedMulti from "../Select";
+import MultiSelect from "../Select";
+
+const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+]
 
 export default storiesOf("Forms", module)
   .addDecorator(withKnobs)
@@ -13,8 +19,21 @@ export default storiesOf("Forms", module)
       width: 400,
     }),
   )
-  .add("Select", () => (
+  .add("Multi Select autoclose onclick", () => (
     <Fragment>
-      <AnimatedMulti />
+      <MultiSelect closeMenuOnSelect={true}
+                 isMulti
+                 defaultValue={options[0]}
+                 options={options}
+                     />
     </Fragment>
-  ));
+  ))
+.add("Multi Select  onclick", () => (
+    <Fragment>
+        <MultiSelect closeMenuOnSelect={false}
+                     isMulti
+                     defaultValue={options[0]}
+                     options={options}
+        />
+    </Fragment>
+));

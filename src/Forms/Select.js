@@ -1,23 +1,35 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
-import makeAnimated from 'react-select/animated';
+import PropTypes from "prop-types"
+import makeAnimated from 'react-select/animated'
+import styled from "styled-components"
 
 const animatedComponents = makeAnimated();
 
-const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
-]
+const MultiSelect = styled(Select)`  
+  ${({ closeMenuOnSelect, name }) => {
+    switch (closeMenuOnSelect) {
+        case "true":
+            return 'closeMenuOnSelect=true';
+        case "false":
+            return 'closeMenuOnSelect=false';
+    }
+    }};
+    
+};
+`;
 
-export default function AnimatedMulti() {
-    return (
-        <Select
-            closeMenuOnSelect={false}
-            defaultValue={options[0]}
-            components={animatedComponents}
-            isMulti
-            options={options}
-        />
-    );
-}
+MultiSelect.defaultProps = {
+    closeMenuOnSelect: false,
+    components: animatedComponents,
+    name: "color"
+};
+
+MultiSelect.propTypes = {
+    closeMenuOnSelect: PropTypes.oneOf(["true", "false"]),
+    options: PropTypes.object,
+    isMulti: PropTypes.boolean,
+    name: PropTypes.any
+
+};
+export default MultiSelect;
