@@ -3,11 +3,16 @@ import ReactSelect from 'react-select'
 import PropTypes from "prop-types"
 import makeAnimated from 'react-select/animated'
 
+
 const animatedComponents = makeAnimated();
 
-const Select = () => {
+const Select = (props) => {
   return (
-    <ReactSelect />  
+    <ReactSelect closeMenuOnSelect={props.closeMenuOnSelect}
+                 isMulti = {props.isMulti ? props.isMulti : ""}
+                 options={props.options}
+                 defaultValue={props.options[0]}
+    />
   );
 };
 
