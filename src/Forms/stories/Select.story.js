@@ -4,6 +4,7 @@ import { host } from "storybook-host";
 import { withKnobs, select } from "@storybook/addon-knobs/react";
 
 import Select from "../Select";
+import MultiSelect from "../MultiSelect";
 
 const options = [
     { value: 'chocolate', label: 'Chocolate' },
@@ -19,19 +20,14 @@ export default storiesOf("Forms", module)
       width: 400,
     }),
   )
-  .add("Multi Select autoclose", () => (
+  .add("Multi Select", () => (
     <Fragment>
-      <Select closeMenuOnSelect={true}
-              isMulti
-              defaultValue={options[0]}
-              options={options}
-             />
+      <MultiSelect options={options} />
     </Fragment>
   ))
-.add("Multi Select", () => (
+.add("Select with react-select package", () => (
     <Fragment>
         <Select closeMenuOnSelect={false}
-                 isMulti
                  defaultValue={options[0]}
                  options={options}
         />
