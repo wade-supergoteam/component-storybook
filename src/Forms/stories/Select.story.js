@@ -4,6 +4,13 @@ import { host } from "storybook-host";
 import { withKnobs, select } from "@storybook/addon-knobs/react";
 
 import Select from "../Select";
+import MultiSelect from "../MultiSelect";
+
+const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+]
 
 export default storiesOf("Forms", module)
   .addDecorator(withKnobs)
@@ -13,19 +20,16 @@ export default storiesOf("Forms", module)
       width: 400,
     }),
   )
+  .add("Multi Select", () => (
+    <Fragment>
+      <MultiSelect options={options} />
+    </Fragment>
+  ))
   .add("Select", () => (
     <Fragment>
-      <Select
-        id="exampleSelect1"
-        size={select(
-          "Size",
-          {
-            normal: "Normal",
-            small: "Small",
-            large: "Large",
-          },
-          "normal",
-        )}
-      />
+        <Select closeMenuOnSelect={true}
+                 defaultValue={options[0]}
+                 options={options}
+        />
     </Fragment>
-  ));
+));

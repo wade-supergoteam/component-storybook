@@ -1,31 +1,31 @@
-// @flow
-import styled from "styled-components";
+import React, { Component } from 'react'
+import ReactSelect from 'react-select'
+import PropTypes from "prop-types"
+import makeAnimated from 'react-select/animated'
 
-import themeProp from "../utils/theme";
+const animatedComponents = makeAnimated();
 
-import Input from "./Input";
+const Select = ({isMulti, closeMenuOnSelect, options}) => {
+  return (
+    <ReactSelect closeMenuOnSelect={closeMenuOnSelect}
+                 isMulti = {isMulti ? isMulti : ""}
+                 options={options}
+                 defaultValue={options[0]}
+    />
+  );
+};
 
-import { inputColor, inputBg, inputHeight, inputHeightSm, inputHeightLg } from "./default-theme";
+Select.defaultProps = {
+    closeMenuOnSelect: false,
+    components: animatedComponents,
+    name: "color"
+};
 
-// TODO: it has a .extend before
-const Select = styled(Input)`
-  &:not([size]):not([multiple]) {
-    ${props => {
-      switch (props.size) {
-        case "small":
-          return `height: ${themeProp("inputHeight", inputHeightSm)};`;
-        case "large":
-          return `height: ${themeProp("inputHeight", inputHeightLg)};`;
-        default:
-          return `height: ${themeProp("inputHeight", inputHeight)};`;
-      }
-    }};
-  }
+Select.propTypes = {
+    closeMenuOnSelect: PropTypes.oneOf(["true", "false"]),
+    options: PropTypes.object,
+    isMulti: PropTypes.boolean,
+    name: PropTypes.any
 
-  &:focus::-ms-value {
-    color: ${themeProp("inputColor", inputColor)};
-    background-color: ${themeProp("inputBg", inputBg)};
-  }
-`;
-
+};
 export default Select;
