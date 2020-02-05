@@ -25,9 +25,9 @@ export default storiesOf("Forms", module)
       <MultiSelect options={options} />
     </Fragment>
   ))
-.add("Select with react-select package", () => (
+  .add("Select", () => (
     <Fragment>
-        <Select closeMenuOnSelect={false}
+        <Select closeMenuOnSelect={true}
                  defaultValue={options[0]}
                  options={options}
         />
