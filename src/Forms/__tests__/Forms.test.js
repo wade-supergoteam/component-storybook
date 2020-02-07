@@ -2,7 +2,7 @@ import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
 import { ThemeProvider } from "styled-components";
-import { CustomSelect, Input, Select, Textarea, FormGroup } from "..";
+import { CustomSelect, Input, Select, MultiSelect,Textarea, FormGroup } from "..";
 
 const customInputTheme = {
   enableRounded: false,
@@ -10,6 +10,12 @@ const customInputTheme = {
   inputFocusBorderColor: "PowderBlue",
   inputFocusBoxShadow: "0 0 0 4px azure",
 };
+
+const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+]
 
 test("Custom Select", () => {
   const wrapper = renderer.create(<CustomSelect />);
@@ -70,8 +76,13 @@ test("Input with enableShadows false", () => {
 });
 
 test("Create Select", () => {
-  const wrapper = renderer.create(<Select />);
-  expect(wrapper).toMatchSnapshot();
+    const wrapper = renderer.create(<Select options={{options}} defaultValue={{ value: 'chocolate', label: 'Chocolate' }} />);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test("Multi Select", () => {
+    const wrapper = renderer.create(<MultiSelect options={{options}} />);
+    expect(wrapper).toMatchSnapshot();
 });
 
 test("Create CustomSelect with rounded borders", () => {
@@ -94,15 +105,15 @@ test("Create CustomSelect small", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test("Create Large Select", () => {
-  const wrapper = renderer.create(<Select size="large" />);
-  expect(wrapper).toMatchSnapshot();
-});
+// test("Create Large Select", () => {
+//   const wrapper = renderer.create(<Select size="large" />);
+//   expect(wrapper).toMatchSnapshot();
+// });
 
-test("Create Small Select", () => {
-  const wrapper = renderer.create(<Select size="small" />);
-  expect(wrapper).toMatchSnapshot();
-});
+// test("Create Small Select", () => {
+//   const wrapper = renderer.create(<Select size="small" />);
+//   expect(wrapper).toMatchSnapshot();
+// });
 
 test("Create Textarea", () => {
   const wrapper = renderer.create(<Textarea />);
