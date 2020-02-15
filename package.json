@@ -39,6 +39,7 @@
     "lodash.get": "^4.4.2",
     "lodash.omit": "^4.5.0",
     "prop-types": "^15.7.2",
+    "react-date-picker": "^7.10.0",
     "react-select": "^3.0.8",
     "react-transition-group": "^2.6.0",
     "styled-components": "4.1.3",
