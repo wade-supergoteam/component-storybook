@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { host } from "storybook-host";
 import { withKnobs } from "@storybook/addon-knobs/react";
 
-import Datepicker from "../DatePicker";
+import DatePicker from "../DatePicker";
 
 export default storiesOf("Date picker", module)
     .addDecorator(withKnobs)
@@ -14,5 +14,5 @@ export default storiesOf("Date picker", module)
         }),
     )
     .add("Date picker simple", () => (
-        <Datepicker  />
+        <DatePicker  />
     ));

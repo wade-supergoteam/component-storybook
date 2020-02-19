@@ -1,9 +1,9 @@
 import React, { Component, useState } from 'react';
-import DatePicker from 'react-date-picker';
+import DtPicker from 'react-date-picker';
 import PropTypes from "prop-types";
 
 
-const Datepicker = ({block}) => {
+const DatePicker = ({block}) => {
 
     const defaultDate = new Date();
     const [date, setDate] = useState(defaultDate);
@@ -11,7 +11,7 @@ const Datepicker = ({block}) => {
 
     return (
         <div>
-            <DatePicker
+            <DtPicker
                 onChange={onChange}
                 value={date}
                 autoFocus={false}
@@ -21,12 +21,12 @@ const Datepicker = ({block}) => {
     );
 }
 
-Map.defaultProps = {
+DatePicker.defaultProps = {
     block:'primary'
 };
 
-Map.propTypes = {
+DatePicker.propTypes = {
     className: PropTypes.string,
 };
 
-export default Datepicker;
+export default DatePicker;
