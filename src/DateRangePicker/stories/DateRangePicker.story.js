@@ -14,7 +14,5 @@ export default storiesOf("Date  range picker", module)
         }),
     )
     .add("Date range picker simple", () => (
-        <DateRangePicker textCLickButoon={'click on the button'}
-                         Selection={'Selection'}
-        />
+        <DateRangePicker className={'testClass'} />
     ));
